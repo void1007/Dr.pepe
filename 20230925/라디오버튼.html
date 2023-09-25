@@ -6,11 +6,13 @@
   <title>Document</title>
 </head>
 <body>
+  <div style="border:1px solid white; float:left; width:33%;"></div>
+  <div style="border:1px solid white; float:left; width:33%;">
     <h1>Are U Gay?</h1>                                         
     <input type="radio"  name="gay" value="nurd"/>암게이
     <input type="radio"  name="gay" value="man"/>낫게이
   <br>
-  <h1>yes</h1>
+    <h1>yes</h1>
  <h1>↓</h1>
 
   <form>
@@ -45,19 +47,24 @@
  <input type="hidden"name="error code" value="누르지 마시오">
  <br>
  <form action="input.jsp" method="post">
-  이메일: <input type="email" name="email"><br><br>
+  이메일: <input type="email" name="email" required><br><br>
   URL: <input type="url" name="url"><br><br>
-  전화번호: <input type="tel" name="tel"><br><br>
+  전화번호: <input type="tel" name="tel" required
+  pattern="[0-9]{3}-[0-9]{3,4}-[0-9]{4}"
+  title="010-1234-1234"
+  placeholder="010-1234-1234"><br>
+  <input type="submit" value="send">
   색상: <input type="color" name="color"><br><br>
   월: <input type="month" name="month"><br><br>
   날짜: <input type="date" name="date"><br><br>
   주: <input type="week" name="week"><br><br>
   시간: <input type="time" name="time"><br><br>
   지역시간: <input type="datetime-local" name="localdatetime"><br><br>
-  숫자: <input type="number" name="number"><br><br>
+  숫자: <input type="number" name="number" min="0" step="200" maxlength="2"><br><br>
   범위: <input type="range" name="range"><br><br>
   <input type="submit" value="제출">
  </form>
- 
+</div>
+<div style="border:1px solid white; float:left; width:33%;"></div>
 </body>
 </html>

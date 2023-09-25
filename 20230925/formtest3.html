@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  fieldset{
+    border: 5px solid orangered;
+      }
+      legend{
+        background-color:purple;
+        color:white ;
+        align: center;
+        border:2px solid pink;
+      }
+</style>
+<body>
+  <form>
+    고객 명 : <input type="text" value="" placeholder="홍길동">
+    <br>
+    <br>
+    전화번호 : <input type="tel" value=""  placeholder="010-1234-1234" pattern="[0-9]{3}-[0-9]{3,4}-[0-9]{4}">
+    <br>
+    <br>
+    E-mail : <input type="text" value="" placeholder="oooooooo@oooooo.com">
+    <br>
+    <br>
+    </form>
+    <fieldset style="width:600px; height:300px;">
+      <legend>피자 사이즈</legend>
+      <br>
+      <br>
+      <br>
+      &nbsp;<input type="radio" name="size" id="small">
+      &nbsp;<label for="small">small</label>
+      <br>
+      <br>
+      <br>
+      &nbsp;<input type="radio" name="size" id="medium">
+      &nbsp;<label for="medium">medium</label>
+      <br>
+      <br>
+      <br>
+      &nbsp;<input type="radio" name="size" id="large">
+      &nbsp;<label for="large">large</label></fieldset>
+      <br>
+      <fieldset style="width:600px; height: 350px;"><legend>토핑 선택</legend>
+        <br>
+              <br>
+              &nbsp;<input type="checkbox" name="choice" id="베이컨">
+              &nbsp;<label for="베이컨">베이컨</label>
+              <br>
+              <br>
+              <br>
+              &nbsp;<input type="checkbox" name="choice" id="치즈">
+              &nbsp;<label for="치즈">치즈</label>
+              <br>
+              <br>
+              <br>
+              &nbsp;<input type="checkbox" name="choice" id="양파">
+              &nbsp;<label for="양파">양파</label>
+              <br>
+              <br>
+              <br>
+              &nbsp;<input type="checkbox" name="choice" id="버섯">
+              &nbsp;<label for="버섯">버섯</label></fieldset>
+              <br>
+    
+    희망배송시간 : <input type="time" name="time">
+    <br>
+    <br>
+    배송시 요청사항 : <textarea rows="2" cols="30" name="feedback" maxlength="21" placeholder="내용을 입력하시오"></textarea>
+    <br>
+    <br>
+    <input type="submit" value="주문하기">&nbsp;&nbsp;<input type="submit" value="다시 선택하기">
+</body>
+</html>
