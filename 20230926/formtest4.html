@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  ol{color: blueviolet; padding-left:20px;}
+  ul{color: blueviolet; padding-left:20px;}
+  fieldset{width:300px;}
+  legend{color:red;background-color:yellow;}
+</style>
+<body>
+  
+  <form><fieldset style="width:550px; height:300px;">
+    <legend>납품자정보</legend>
+    <br>
+    <ol>
+    <li>납품자명 : <input type="text" name="name" required placeholder="name"></li>
+    <br>
+    <br>
+    <br>
+    <li>email : <input type="email" name="email" required placeholder="answer@naver.com"></li>
+    <br>
+    <br>
+    <br>
+    <li>홈페이지 : <input type="url" name="URL" required placeholder="http://"></li>
+    </ol>
+    
+    <br>
+    <br>
+    </fieldset>
+    <fieldset style="width:550px; height:450px;">
+    <legend>납품정보</legend>
+    <br>
+    <ul>
+      <li>상품명 : <input type="text" name="proc_name"></li>
+  <br>
+  <br>
+ <li>납품수량 : <input type="number" placeholder="최소100" name="proc_qt"></li>
+<br>
+<br>
+<li>납품등급 : <input type="range" name="range"></li>
+<br>
+<br>
+<br>
+<li>기타사항: <textarea rows="3" cols="20"></textarea></li>
+    </ul>
+</fieldset>
+<br>
+<br>
+<input type="submit" value="send message">
+
+  </fieldset></form>
+  
+</body>
+</html>
