@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>liststyle</title>
+<style>
+  ul{
+    /* list-style-type: disc; */
+    /* list-style-type: circle; */
+    /* list-style-type: square; */
+    list-style: none; text-align:center;
+    border-top: 1px solid #a3be8c;
+    border-bottom: 1px solid #a3be8c; padding: 10px 0;
+  }
+  ul li{
+    display: inline; text-transform: uppercase;
+    padding: 0 10px; letter-spacing: 10px;
+  }
+  ul li a{text-decoration: none; color:#5e81ac;}
+  ul li a{text-decoration: underline;}
+  /* ol{
+    list-style-type: upper-roman;
+    list-style-type: decimal-leading-zero;
+    list-style-type: lower-greek;
+  } */
+</style>
+</head>
+<body>
+  <ul>
+    <li><a href="#">snak</a></li>
+    <li><a href="#">burger</a></li>
+    <li><a href="#">potato</a></li>
+  </ul>
+  <ol>
+    <li>포카칩</li>
+    <li>허니버터칩</li>
+    <li>포카칩어니언맛</li>
+  </ol>
+</body>
+</html>

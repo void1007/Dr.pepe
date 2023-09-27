@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>background-image</title>
+  <style>
+    div{
+      height: 350px;
+      border: 10px dashed black;
+      padding: 20px;
+
+      background-image:url('../resources/img/shotpepe.jpg');
+      background-repeat: no-repeat;
+      /* background-size: cover; */
+      /* background-position:top; */
+      background-attachment: scroll;
+      background: yellowgreen;
+    }
+    h1{color: red;}
+    #origin{
+      background-repeat: no-repeat;
+    }
+    #padding{
+      background-repeat: no-repeat;
+      background-clip: padding-box;
+    }
+    #content{
+      background-repeat: no-repeat;
+      background-clip: content-box;
+    }
+    p{color: black;}
+  </style>
+</head>
+<body>
+ <div id="origin">
+  <h1>border-box</h1>
+  <p>방아쇠는 심판을 내린다.</p>
+</div>
+<br>
+<div id="padding">
+  <h1>padding-box</h1>
+  <p>방아쇠는 심판을 내린다.</p>
+</div>
+<br>
+<div id="content">
+  <h1>content-box</h1>
+  <p>방아쇠는 심판을 내린다.</p>
+</div>
+
+</body>
+</html>
