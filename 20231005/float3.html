@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .wrap {
+        width: 900px;
+        border: 2px solid yellowgreen;
+      }
+      .box1 {
+        box-sizing: border-box;
+        width: 300px;
+        background-color: blueviolet;
+        float: left;
+      }
+      .box2 {
+        box-sizing: border-box;
+        width: 300px;
+        background-color: darkcyan;
+        float: left;
+      }
+      .box3 {
+        box-sizing: border-box;
+        width: 300px;
+        background-color: darkslategray;
+        color: white;
+        float: left;
+      }
+      .wrap::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="box1">gay1</div>
+      <div class="box2">gay2</div>
+      <div class="box3">gay3</div>
+    </div>
+  </body>
+</html>

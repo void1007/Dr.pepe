@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>layout</title>
+    <style>
+      div {
+        margin-top: 10px;
+        margin-bottom: 20px;
+      }
+      #header {
+        position: relative;
+        top: 10px;
+        width: 500px;
+        height: 150px;
+        background-color: cadetblue;
+        clear: both;
+        border-radius: 20px;
+      }
+      #nav {
+        float: left;
+        width: 150px;
+        height: 500px;
+        background-color: lightblue;
+        border-radius: 20px;
+      }
+      #content {
+        margin-left: 20px;
+        width: 330px;
+        height: 500px;
+        background-color: lightcoral;
+        border-radius: 50px;
+        float: left;
+      }
+      #footer {
+        width: 500px;
+        height: 150px;
+        background-color: lightseagreen;
+        clear: both;
+        border-radius: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="header"><h1 align="center">div id="header"</h1></div>
+      <div id="nav"><h1>div id="nav"</h1></div>
+      <div id="content" margin><h1>div id="content"</h1></div>
+      <div id="footer"><h1 align="center">div id="footer"</h1></div>
+    </div>
+  </body>
+</html>
