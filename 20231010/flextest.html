@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>rowdirection</title>
+  <style>
+    *{
+      box-sizing: border-box;
+    }
+    body{
+      /* padding-left: 20px; */
+      margin: 0;
+    }
+    ul{
+      display: flex;
+      list-style-type: none;
+      padding: 0;
+      /* flex-direction: row; */
+      /* flex-direction: row-reverse; */
+      /* flex-direction: column; */
+      /* flex-direction: column-reverse; */
+    }
+    #container{background-color: greenyellow;
+      display: flex;
+      flex-wrap: nowrap;
+      /* flex-wrap: wrap; */
+      /* flex-wrap: wrap-reverse; */
+    }
+    #container > div{
+      text-align: center;
+  width: 50px;
+  height: 50px;
+  background-color: orangered;
+  margin: 5px;
+  padding: 5px;
+}
+  </style>
+</head>
+<body>
+  <ul>
+    <li>코알라</li>
+    <li>개구리</li>
+    <li>아르마딜로</li>
+    <li>코모도 왕 도마뱀</li>
+    <li>카멜레온</li>
+  </ul>
+  <div id="container">
+    <p>플렉스 컨테이너 안에있는 플렉스 입니다.</p>
+    <!-- <div>FLEX</div>
+    <div>FLEX</div>
+    <div>FLEX</div>
+    <div>FLEX</div>
+    <div>FLEX</div>
+    <div>FLEX</div>
+    <div>FLEX</div>
+    <div>FLEX</div>
+    <div>FLEX</div>
+    <div>FLEX</div> -->
+  </div>
+</body>
+</html>

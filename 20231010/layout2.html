@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>layout2</title>
+</head>
+<style>
+  #header{background-color: chartreuse;
+  height: 30%;
+width: 100%;
+border-radius: 30px;
+text-align: center;
+margin: 0%;}
+#nav{ background-color: pink;
+border-radius: 30px;
+width: 30%;
+height: 60%;
+float: left;
+display: inline-block;
+font-size: 1.3em;
+
+}
+#content{
+background-color: burlywood;
+width: 70%;
+height: 60%;
+border-radius: 30px;
+display: inline-block;
+float: right;
+
+}
+#footer{
+  background-color: darkgreen;
+  width: 100%;
+  height: 10%;
+  border-radius: 30px;
+  clear: both;
+  color: white;
+  text-align: center;
+  margin: 0%;
+}
+  html,body,#wrapper{
+    width: 100%;
+    height: 100%;
+  }
+  h1{padding-left: 25px;
+    padding-top: 50px;
+  margin: 0%;}
+  ul{padding-left: 100px;
+    margin: 0%;
+  }
+  li{color:white}
+  img{padding-left: 100px;}
+  p{margin: 0%;
+  padding-left: 75px;}
+  h2{padding-left: 75px;}
+</style>
+<body>
+  <div id="wrapper">
+    <div id="header">
+      <h1>My Blog Page</h1>
+<br>
+   개구리들의 천국</div>
+  <div id="nav"><h1>Links</h1>
+  <ul>
+    <li>PePe</li>
+    <li>Punch PePe</li>
+    <li>Sun PePe</li>
+  </ul>
+  <img src="../resources/img/sunpepe.gif" width="200px;" height="200px;">
+  <p>PePe</p>
+</div>
+  <div id="content">
+    <div>
+      <h2>Semantic Tags</h2>
+      <p>시멘틱 요소(Semantic elements)들은 브라우저에게 요소의 의미나 목적
+        을 명확하게 알려주는 요소이다. 레이아웃을 만들때 쓰는것, 의미가 있는
+        요소라면 div보다는 시멘틱 태그를 사용해준다.
+      </p>
+    </div>
+    <div>
+      <h2>div와 span</h2>
+      <p>div은 "divide"의 약자로서 페이지를 논리적인 섹션으로 분리하는데 사용
+        되는 태그이다. span요소는 인라인 요소로서 텍스트를 위한 컨테이너로
+        사용할 수 있다.
+      </p>
+    </div>
+  </div>
+  <div id="footer">Copyright (c) PePe</div>
+  </div>
+  
+
+</body>
+</html>
