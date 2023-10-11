@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flextest4</title>
+  <style>
+    *{
+      box-sizing: border-box;
+    }
+    body{
+      
+      margin: 0;
+    }
+    ul{
+      display: flex;
+      list-style-type: none;
+      border: 5px solid red;
+padding: 0;
+height: 300px;
+       }
+       li:nth-child(1){order: 5;}
+       li:nth-child(2){order: 4;}
+       li:nth-child(3){order: 3;}
+       li:nth-child(4){order: 2;}
+       li:nth-child(5){order: 1;}
+       li{background-color: aquamarine;}
+       li:nth-child(2n){ background-color: orangered;}
+       li:nth-child(2){flex:0 1 200px;
+         /* flex-grow: 1;
+      flex-shrink: 2;} */
+       /* li:nth-child(3){ flex-shrink: 3;
+      flex-grow: 2;}
+       */
+       
+
+  </style>
+
+</head>
+<body>
+  <ul>
+    <li>코브라</li>
+    <li>개구리</li>
+    <li>코알라</li>
+    <li>캥거루</li>
+    <li>독수리</li>
+  </ul>
+</body>
+</html>
