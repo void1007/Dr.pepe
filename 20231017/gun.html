@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gun</title>
+
+</head>
+<style>
+  div{border-radius: 20px;}
+  #wrapper, 
+  html,body{
+    width: 100%;
+    height: 100%;
+  }
+  #wrapper{
+    margin: 0px;
+    display: grid;
+    grid-template-rows: 2fr 0.5fr 4fr 0.6fr;
+    gap: 10px;
+  }
+  *{
+    box-sizing: border-box;
+  }
+
+  #header1{
+    background-color: #748957;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  #header2{
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: space-evenly;
+    list-style-type: none;
+    letter-spacing: 3px;
+  }
+  .gay{
+    background-color: #a9a58d;
+  }
+  #main{
+    background-color: #746d5d;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+  }
+  #pepe{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    gap: 10px;
+  }
+  #footer{
+    background-color: #ccccf2;
+  }
+  #content{
+    background-color: #746d5d;
+  }
+  .content{
+    border: 1px solid #696a6b;
+    display: grid;
+    grid-template-rows: 5fr 4fr 1fr;
+  }
+  #left{
+    display: grid;
+    grid-template-rows: 2fr 6fr 1fr;
+  }
+  #left>ul{
+    list-style-type: none;
+    color: white;
+    font-size: 1.2em;
+    margin: 10px;
+    display: grid;
+    grid-template-rows: repeat(7,1fr);
+    border-bottom: 1px solid black;
+    
+  }
+  #left>ul>li {
+    border-top: 1px solid black;
+    
+  }
+      
+  #left>p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+</style>
+<body>
+  <div id="wrapper">
+    <div id="header1"><h1>Web Shopping</h1></div>
+    <div style="background-color: #55514a;">
+      <ul id="header2">
+        <li>HOME</li>
+        <li>SHOPPING</li>
+        <li>ABOUT</li>
+        <li>NEWS</li>
+        <li>MY ACCOUNT</li>
+        <li>CONTACTS</li>
+      </ul>
+    </div>
+    <div id="pepe">
+      <div id="left" class="gay">
+        <p>카테고리</p>
+        <ul style="background-color: #93755d" >
+          <li id="소총">소총</li>
+          <li>수류탄</li>
+          <li>싸제군화</li>
+          <li>오바로크</li>
+          <li>맛스타</li>
+          <li>전자시계</li>
+          <li>말표구두약</li>
+        </ul>
+
+      </div>
+    <div id="main">
+      <div id="aside1" class="content"></div>
+      <div id="center" class="content"></div>
+      <div id="aside2" class="content"></div>
+    </div>
+    <div id="right" class="gay">쇼핑카트</div>
+    </div>
+    
+    
+    <div id="footer"></div>
+  </div>
+</body>
+</html>
