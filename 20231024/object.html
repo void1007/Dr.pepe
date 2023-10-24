@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>object</title>
+  </head>
+  <body>
+   
+  </body>
+  <script>
+    let name = "페페";
+    let age = "20";
+    let gender = "male";
+    let address = "대전광역시 유성구 학하동";
+
+    let name2 = "샘 스미스";
+    let age2 = "23";
+    let gender2 = "gay";
+    let address2 = "미국 어딘가";
+
+    // 객체 선언 방법
+    let person1 = {};
+    let person2 = new Object(); //-->잘 안쓰는 방법
+
+    // 객체 생성 후 프로퍼티 추가 방법1
+    // person1.name = "페페";
+    // person1.age = "20";
+    // person1.gender = "male";
+    // person1.address = "대전광역시 유성구 학하동";
+    // console.log(person1);
+    // console.log(`person1 - name : ${name}, age : ${age}, gender : ${gender}, address : ${address}`)
+    //객체 생성 후 프로퍼티 추가 방법2
+    person2["name"] = "샘스미스";
+    person2["age"] = "31세";
+    person2["gender"] = "논바이너리";
+    person2["address"] = "영국 어딘가";
+    console.log(person2);
+    
+    //객체 선언과 동시에 프로퍼티를 추가하는 방법
+
+    let person3 = {
+      name: "제임스 메디슨",//-->쉼표를 반드시 넣어주자
+      age: 25,
+      gender : "male",
+      address : "england",
+      child : person2, 
+    };
+    console.log(person3);
+
+    //객체의 속성(프로퍼티)값을 가져오는 방법1
+    
+    console.log(person3.age);
+    console.log(person3.child.name);
+
+    //객체의 속성(프로퍼티)값을 가져오는 방법2
+
+    console.log(person3["name"]);
+    
+    let text1 = "저의 이름은 name 이고, 나이는 age 이며, 성별은 gender 입니다. 그리고 주소는 address 입니다."
+    document.write(`<h1>"저의 이름은 ${person2.name} 이고, 나이는 ${person2.age}이며, 성별은 ${person2.gender} 입니다,주소는 ${person2.address}입니다."</h1>` );
+  </script>
+</html>
