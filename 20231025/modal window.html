@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>modal-window</title>
+  <meta name="author"content="pepe">
+  <meta name="keywords"content="modal window, 모달창, 모달, 메세지, 새창, 팝업">
+  <meta name="description"content="modal window를 통해 팝업 효과를 만들 수 있다.">
+  <link href="css/modal.css" rel="stylesheet">
+</head>
+<body>
+  <h1>Hello world!</h1>
+  <button id="modal_open" type="button">&times;</button>
+  <p>오마에와 모 신데이루!</p>
+  <ul>
+    <li>켄시로</li>
+    <li>한마바키</li>
+    <li>쿠죠 죠타로</li>
+    <li>한마 유지로</li>
+  </ul>
+
+  <div id="modal_back">
+    <div id="modal_win">
+      <div id="modal_header">
+        <h4>모달 윈도우</h4>
+        <button id="modal_close" type="button">&times;</button>
+      </div>  
+      <div id="modal_body">
+        하늘로 돌아갈 때다! 라오우하늘로 돌아갈 때다! 라오우하늘로 돌아갈 때다! 라오우하늘로 돌아갈 때다! 라오우하늘로 돌아갈 때다! 라오우
+        하늘로 돌아갈 때다! 라오우하늘로 돌아갈 때다! 라오우하늘로 돌아갈 때다! 라오우하늘로 돌아갈 때다! 라오우하늘로 돌아갈 때다! 라오우
+        하늘로 돌아갈 때다! 라오우하늘로 돌아갈 때다! 라오우하늘로 돌아갈 때다! 라오우하늘로 돌아갈 때다! 라오우하늘로 돌아갈 때다! 라오우
+        하늘로 돌아갈 때다! 라오우하늘로 돌아갈 때다! 라오우하늘로 돌아갈 때다! 라오우하늘로 돌아갈 때다! 라오우하늘로 돌아갈 때다! 라오우
+        하늘로 돌아갈 때다! 라오우하늘로 돌아갈 때다! 라오우하늘로 돌아갈 때다! 라오우하늘로 돌아갈 때다! 라오우하늘로 돌아갈 때다! 라오우
+        하늘로 돌아갈 때다! 라오우하늘로 돌아갈 때다! 라오우하늘로 돌아갈 때다! 라오우하늘로 돌아갈 때다! 라오우하늘로 돌아갈 때다! 라오우
+      </div>  
+    </div>
+  </div>
+  <script>
+    document.getElementById("modal_open").onclick =function(){
+      document.getElementById("modal_back").style.display = "block"
+    };
+    document.getElementById("modal_close").onclick =function(){
+      document.getElementById("modal_back").style.display = "none"
+    };
+  </script>
+</body>
+</html>

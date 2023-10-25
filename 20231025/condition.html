@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+<script>
+  // // 1.if문
+  // if(조건식){
+  //   조건식이 참일 경우 실행할 코드;
+  // }
+  // if(3>5){
+  //   alert("트루입니다.");
+  // }
+// const x = 5;
+// const y = 3;
+// const z = 10;
+// if(x < y){
+//  alert("인간")
+// }
+// else if(y > z){
+//  alert("오스트랄로 피테쿠스")
+// }
+// else if(x > z){
+//   alert("침팬지")
+// }
+// else {
+//   alert("짐승새끼냐?")
+// }
+
+//1. 사용자에게 점수를 입력받는다.
+// prompt() 함수 사용 => 받은 결과값을 숫자로 변환
+// const num = prompt();
+//2. 입력받은 점수별로
+//0~59 : F     if(0 <= num && num <= 59){} -->"&&"는 and의 뜻
+//60~69 : D
+//70~79 : C
+//80~89 : B
+//90~100 : A
+
+// if(y < z) {
+  //   alert("y는 z보다 작다.")
+  // }
+  
+  // if(y > z){
+    //   alert("되겠냐?")
+    // }
+    let input;
+    input = prompt("복무일수를 입력하세요","0~540까지만 입력");
+    parseInt(input);
+    const num = input;
+    if( 0 <= num && num <= 90){alert("이병(어둠의 골짜기)")}
+     else if( 90 <= num && num <= 270){alert("일병(이유 없는 분노)")}
+     else if( 270 <= num && num <= 450){alert("상병(인간의 시작)")}
+     else if( 450 <= num && num <= 540){alert("병장(민간인(진))")}
+    else{
+      alert("ㅋㅋ 미필이냐?")
+    }
+  </script>
+</html>

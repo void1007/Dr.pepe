@@ -1,0 +1,109 @@
+/*css Reset*/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*1번째방법 */
+/*padding-top을 이용하여 글자를 */
+/*아래로 내리는 방법 */
+/*단점*/
+/*단점 박스의 높이가 변하거나  */
+/*글의 줄갯수가 늘어나면 패딩값을 바꿔야함 (즉)-->다시 수정해야됨 */
+
+/* #box1 {
+width: 200px;
+height: 100px;
+background-color: lightgreen;
+text-align: center;
+padding-top: 35px; 
+} */
+
+/*2번째방법 */
+/*장점*/
+/*글줄이 여러줄이여도 ok */
+/*정확히 정중앙 ok */
+/*단점 */
+/*박스의 높이를 콕찝어 얼마인지 말할 수 없음 */
+
+/* #box1 {
+  width: 200px;
+ padding: 40px 0;
+  text-align: center;
+  background-color: orangered;
+} */
+
+/* line-height를 이용하는방법*/
+/*장점*/
+/*박스의 높이를 이야기할 수 있음*/
+/*정확히 정중앙에 위치*/
+/*박스의 높이가 달라져도 쉽게 수정*/
+/*단점*/
+/*1줄밖에 못쓴다.*/
+
+/* #box1{
+  width: 200px;
+  height: 100px;
+  background-color: aqua;
+  text-align: center;
+  line-height: 100px;
+} */
+
+/*사람들이 많이 오해하는 시나리오*/
+/*css중에 보니까 vertical-align이 요기있네???*/
+
+/* #box1{
+  width: 200px;
+  height: 100px;
+  background-color: blueviolet;
+  text-align: center;
+  vertical-align: middle;
+} */
+
+/* .small{
+  font-size: 0.5em;
+  vertical-align: 0.8em;
+}
+.big{
+  font-size: 2em;
+}*/
+/* #pepe{
+  vertical-align: -180px;
+}  */
+
+/*마지막 방법*/
+/* 두줄 이상 글도 쓰고 싶고 */
+/* 박스의 높이도 특정하고 싶고 */
+/* 정확히 정중에도 놓고 싶고 */
+
+#box2{
+  color: white;
+  width: 300px;
+  height: 200px;
+  background-color: #06c;
+  position: relative;
+  left:50% ;
+  top:50% ;
+  transform: translate(-50%,-50%);
+}
+#box3{
+  width: 600px;
+  height: 400px;
+  position: relative;
+  background-color: yellowgreen;
+  margin-left: 100px;
+  margin-top: 500px;
+}
+#box1{
+  width: 200px;
+  height: 100px;
+  background-color: teal;
+  position: relative;
+}
+#box1 span {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+}
