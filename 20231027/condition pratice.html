@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    //1. 사용자에게 좋아하는 숫자를 입력받고 그 숫자가 짝수라면
+    //"당신이 좋아하는 숫자는 짝수입니다.!"
+    //"당신이 좋아하는 숫자는 홀수입니다."
+
+    // const num1 = parseInt(prompt("정수를 입력하세요", "ex)1, 2, 3"));
+    // let str = "";
+    // num1 % 2 == 0 ? (str = "짝수") : (str = "홀수");
+    // document.write(`<h1>당신이 좋아하는 숫자는 ${str}입니다.</h1>`);
+
+    // if(num1 % 2 == 0){
+    // document.write(`당신이 좋아하는 숫자는 짝수입니다.`)
+    // }
+    // else{
+    //   document.write(`당신이 좋아하는 숫자는 홀수입니다.`)
+    // }
+    const id = "dw501";
+    const pwd = 112233;
+    const userid = prompt("아이디를 입력하세요");
+    const userpwd = prompt("비밀번호를 입력하세요");
+
+    if (userid == id) {
+      if (userpwd == pwd) {
+        alert(`${id}님 환영합니다.`);
+      } else {
+        alert(`비밀번호가 틀렸습니다.`);
+      }
+    } else {
+      alert("존재하지 않는 아이디 입니다.");
+    }
+  </script>
+</html>

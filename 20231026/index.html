@@ -23,13 +23,19 @@
     <script src="https://kit.fontawesome.com/ca339dc097.js"
      crossorigin="anonymous">
     </script>
+    <script
+    src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   </head>
   <body>
     <header>
 <div class="container">
   <h1>
     <a href="index.html">
-      <img src="images/logo2.jpg" alt="백병원 로고" height="100px"/>
+      <img src="images/logo2.png" alt="백병원 로고" height="120px"/>
     </a>
   </h1>
   <div id="header_right">
@@ -48,45 +54,48 @@
       </ul>
     </nav>
     <nav id="lnb">
+      <div id="panel"></div>
       <ul>
         <li class="main">
-          <a href="#"></a>
+          <a href="#">진료안내</a>
           <ul class="sub">
-            <li>
-              <a href="#"></a>
-              <a href="#"></a>
-              <a href="#"></a>
-            </li>          
+            <li><a href="#">진료과/의료진</a></li>          
+            <li><a href="#">전문센터</a></li>          
+            <li><a href="#">클리닉</a></li>          
+            <li><a href="#">외래진료안내</a></li>          
+            <li><a href="#">입/퇴원안내</a></li>          
+            <li><a href="#">진료지원</a></li>          
+            <li><a href="#">의약품정보</a></li>          
+            <li><a href="#">건강정보</a></li>          
           </ul>        
         </li>
         <li class="main">
-          <a href="#"></a>
-          <ul class="sub">
-            <li>
-              <a href="#"></a>
-              <a href="#"></a>
-              <a href="#"></a>
-            </li>          
-          </ul>        
+          <a href="#">진료예약</a>
+          <ul class="sub">      
+            <li><a href="#">예약안내</a></li>       
+            <li><a href="#">예약확인</a></li>       
+            <li><a href="#">증명서발급</a></li>       
+            <li><a href="#">비급여진료비</a></li> 
+          </ul>                              
         </li>
         <li class="main">
-          <a href="#"></a>
-          <ul class="sub">
-            <li>
-              <a href="#"></a>
-              <a href="#"></a>
-              <a href="#"></a>
-            </li>          
-          </ul>        
-        </li>
+          <a href="#">이용안내</a>
+          <ul class="sub">          
+            <li><a href="#">고객지원</a></li>            
+            <li><a href="#">찾아오시는 길</a></li>            
+            <li><a href="#">원내배치도</a></li>            
+            <li><a href="#">전화번호안내</a></li>            
+            <li><a href="#">주차안내</a></li>            
+          </ul>  
+        </li>       
         <li class="main">
-          <a href="#"></a>
-          <ul class="sub">
-            <li>
-              <a href="#"></a>
-              <a href="#"></a>
-              <a href="#"></a>
-            </li>          
+          <a href="#">병원소개</a>
+          <ul class="sub">          
+            <li><a href="#">병원소개</a></li>           
+            <li><a href="#">병원소식</a></li>           
+            <li><a href="#">행복지기</a></li>           
+            <li><a href="#">홍보동영상</a></li>           
+            <li><a href="#">서비스헌장</a></li>           
           </ul>        
         </li>
       </ul>
@@ -94,7 +103,55 @@
   </div>
 </div>
     </header>
-    <main></main>
-    <footer></footer>
+    <main>
+     <div class="container">
+      <div id="slider">
+        <div><img src="images/백병원의사.gif" alt="슬라이더 이미지" width="1024px" height="768px"><h1 align="center">병원장</h1></div>
+        <div><img src="images/물리치료사 상하이조.gif" alt="슬라이더 이미지" width="1024px" height="768px"><h1 align="center">물리치료사 상하이조</h1></div>
+        <div><img src="images/심영.png" alt="슬라이더 이미지" width="1024px" height="768px"><h1 align="center">비뇨기과 전문의 심영</h1></div>
+      </div>
+      <script>
+        $("#slider").slick({
+          autoplay: true,
+          autoplayspeed: 5000,
+          
+        });
+      </script>
+     </div>
+    </main>
+    <footer>
+      <div id="footer_top">
+       <div class="container">
+        <a href="#">비급여 진료비</a>
+        <a href="#">환자권리장전</a>
+        <a href="#">고객헌장</a>
+        <a href="#">정보공개</a>
+        <a href="#">청렴센터</a>
+        <a href="#">청렴도측정결과공개</a>
+       </div>
+      </div>
+      <div id="footer_bottom">
+        <div class="container">
+          <div id="footer_bottom_left">
+            <div>
+              <a href="#">웹이용약관</a>
+              <a class="mark" href="#">개인정보처리방침</a>
+              <a href="#">이메일무단수집거부</a>
+              <a href="#">고객의소리</a>
+            </div>
+            <div>
+              <p>대표전화 : 1599-7123 말로거는전화 : 1636 + "충남대학교병원"이라고 말하세요!</p>
+              <p>(35015)대전광역시 중구 문화로 282 충남대학교병원 사업자번호 : 305-82-08811</p>
+              <p>COPYRIGHT BY CHUNGNAM NATIONAL UNIVERSITY HOSPITAL ALL RIGHTS RESERVED</p>
+            </div>
+          </div>
+          <div id="footer_bottom_right"></div>
+        </div>
+      </div>
+    </footer>
   </body>
+  <script>
+
+  </script>
 </html>
+       
