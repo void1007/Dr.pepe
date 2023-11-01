@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+<script>
+  document.write(`<h3>별찍기 역 직각삼각형</h3>`)
+  for(let a = 5; a >= 1 ; a-- ){
+  for(let b = 1; b <= a; b++){
+
+    document.write(`*`)
+  }
+  document.write(`<br>`)
+}
+document.write(`<hr>`)
+document.write(`<h3>별찍기 역 직각삼각형 빈공간 만들기</h3>`)
+for(let a = 1; a <= 5 ; a++ ){
+  for(let b = 1; b <= a-1; b++){
+    document.write(`&nbsp;`)
+  }
+    for(let c = 5; c>=a; c--){
+      document.write(`*`)
+    }
+    document.write(`<br>`)
+    }
+document.write(`<hr>`)
+document.write(`<h3>별찍기 트리형</h3>`)
+for(let x = 0; x < 5; x++){
+  for(let y = 4; y > x ; y--){
+document.write(`&nbsp;`)
+  }
+  for(let z = 1; z < 2*x+2 ; z++){
+    document.write(`*`)
+  }
+//   for(let z = 0; z <= x ; z++){
+// document.write(`*`)
+//   }
+//  for(let a = 0; a < x; a++){
+//   document.write(`*`)
+//  }
+ document.write(`<br>`)
+}
+for(let a = 0; a < 6; a++){
+  for(let b = -1; b < a; b++){
+    document.write(`&nbsp;`)
+  }
+  for(let c = 9; c > 2*a+2; c--){
+    document.write(`*`)
+  }
+  document.write(`<br>`)
+}
+document.write(`<hr>`)
+document.write(`<h3>별찍기 아래방향</h3>`)
+for(let i = 0; i < 5; i++){
+  for(let j = 0; j < i; j++){
+    document.write(`&nbsp;`)
+  }
+  for(let k = 5; k > i; k--){
+    document.write(`*`)
+  }
+  for(let l = 4; l > i; l--){
+    document.write(`*`)
+  }
+  // for(let k=8; k>=2*i; k--){
+  //   document.write(`*`)
+  // }
+  document.write(`<br>`)
+}
+
+document.write(`<hr>`)
+document.write(`<h3>별찍기 마름모형</h3>`)
+for(let a = 0; a < 5; a++){
+  for(let b = 4; b > a; b--){
+document.write(`&nbsp;`)
+  }
+  for(let c = 1; c<2*a+2;c++){
+    document.write(`*`)
+  }
+  document.write(`<br>`)
+}
+for(let d = 0; d < 5; d++){
+  for(let e = 0; e < d; e++){
+    document.write(`&nbsp;`)
+  }
+  for(let g = 8; g >= 2*d; g--){
+    document.write(`*`)
+  }
+  document.write(`<br>`)
+}
+</script>
+</html>
