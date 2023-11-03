@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    div {
+      width: 400px;
+      height: 600px;
+      border: 2px solid gray;
+      border-radius: 10px;
+      position: absolute;
+      top: 100px;
+      left: 200px;
+      padding: 0 10px;
+      overflow: auto;
+    }
+    p {
+      text-align: center;
+      background-color: rgb();
+      padding: 10px 10px;
+      border-radius: 10px;
+    }
+  </style>
+  <body>
+    <input type="text" id="input" placeholder="할일 적긔" />
+    <button onclick="clickFunc()">클릭하라긔</button>
+    <div></div>
+  </body>
+  <script>
+    function clickFunc() {
+      //1. input 요소를 가져온다.
+      const input = document.querySelector("#input");
+      //2. 가져온 input의 값(value)을 가져온다.
+      const inputVal = input.value;
+      //2.1 가져온 vlaue가 공백("")이면
+      //내용을 입력해주세요. 라는 alert 띄우고 함수 종료
+      if (inputVal == "") {
+        alert("내용을 입력해라");
+        return;
+      }
+      //3.p태그를 만든다.
+      const p = document.createElement("p");
+      //4. 만든 p태그에 가져온 input value 를 넣는다.
+
+
+      let Arr = [];
+        for (let a = 0; a < 3; a++) {
+          Arr[a] = parseInt(Math.random() * 255 + 1);
+          // numArr.push(parseInt(Math.random()*255 + 1));
+          // id 가 res인 div에 숫자 6개 추가(p태그를 사용)
+          // console.log(numArr);
+        }
+        // p.style.color = `rgb(${Arr[0]},${Arr[1]},${Arr[2]})`;
+        p.style.backgroundColor = `rgb(${Arr[2]},${Arr[0]},${Arr[1]})`;
+
+
+      //4-1 0~255 까지의 랜덤한 숫자 3개를 추출한다.
+      //rgb(??,???,?)
+      //let colorArr = [];
+      //for( let i =0; i<3; i++){
+      //colorArr[i] = parseInt(Math.random()*256));}
+      //console.lor(Arr)
+      //p.style.backgroundColor = `rgb(${colorArr[0])},${colorArr[1]},${colorArr[2]})`or`rgb(${colorArr.tostring})`;
+      const luma = 0.2126 * Arr[0] + 0.7152 * Arr[1] + 0.0722 * Arr[2];
+      console.log(luma);
+      p.style.color = parseInt(luma) <= 155 ? "white" : "black";
+      //4-2 추출한 랜덤숫자로 p태그의 background color를 변경한다.
+      
+      p.innerHTML = inputVal;
+      //5. div요소를 가져온다.
+
+      const div = document.querySelector("div");
+      //6. 가져온 h2 요소에 만든 p태그를 추가한다.
+      div.append(p);
+      //7. input value를 공백으로 바꿔준다.
+      input.value = " ";
+
+      function randProc() {
+        let Arr = [];
+        for (let a = 0; a < 3; a++) {
+          Arr[a] = parseInt(Math.random() * 255 + 1);
+        }
+       
+        
+      }
+      
+      
+    }
+  </script>
+</html>
