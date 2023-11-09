@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    let a = 3;
+    let b = 4;
+    document.write(`a + b : ${a + b}<br>`);
+    document.write(`a - b : ${a - b}<br>`);
+    document.write(`a * b : ${a * b}<br>`);
+    document.write(`a / b : ${a / b}<br>`);
+
+    if (a > b) {
+      alert("a가 b 보다 큽니다.");
+    } else {
+      alert("b가 a 보다 큽니다.");
+    }
+    document.write(`<hr>`);
+    let num1 = a;
+    let num2 = b;
+    document.write(`<h2>${num1}</h2>`);
+    document.write(`<h2>${num2}</h2>`);
+    document.write(`<hr>`);
+    x = [];
+    for (let x = 1; x < 11; x++) {
+      document.write(`<h2>${x}</h2>`);
+    }
+    document.write(`<hr>`);
+    for (let x = 1; x < 101; x++) {
+      document.write(`<h3>${x}</h3>`);
+    }
+    document.write(`<hr>`);
+    for (let x = 1; x < 101; x++) {
+      if (x % 2 == 0) {
+        document.write(`<h3>${x}<h3>`);
+      }
+    }
+    document.write(`<hr>`);
+    for (let x = 1; x < 101; x++) {
+      if (x % 2 == 1) {
+        document.write(`<h3>${x}</h3>`);
+      }
+    }
+    document.write(`<hr>`);
+
+    function y() {
+      alert("안녕하냐?");
+    }
+    let w = parseInt(prompt("입력1"));
+    let z = parseInt(prompt("입력2"));
+
+    function gay(num1, num2) {
+      let wval = w.value;
+      let zval = z.value;
+      console.log(w + z);
+    }
+
+    gay(w, z);
+  </script>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="p1">안녕하냐? 아이디가 p1인 p태그다.</p>
+    <br />
+    <p id="p2">안녕하냐? 아이디가 p2인 p태그다.</p>
+    <br />
+    <p class="p1" id="p3">안녕하냐? 아이디가 p3이고 클래스가 p1인 p태그다.</p>
+    <br />
+    <p class="p1" id="p4">안녕하냐? 아이디가 p4이고 클래스가 p1인 p태그다.</p>
+    <br />
+    <button onclick="textchange()">
+      p1 텍스트 '변경된 내용입니다.' 로 변경
+    </button>
+    <button onclick="textcolorchange()">p2 텍스트 색상 변경</button>
+    <button onclick="backgroundcolor()">p3 배경색상 변경</button>
+    <button onclick="size()">p4 폰트 사이즈 변경</button>
+  </body>
+  <script>
+    let shit;
+    function textchange() {
+      const pTag = document.querySelector("#p1");
+      pTag.innerHTML = `변경된 내용입니다.`
+    }
+    function textcolorchange() {
+      shit = setInterval(function () {
+        const textcolorArr = [];
+        for (let i = 0; i < 3; i++) {
+          textcolorArr.push(parseInt(Math.random() * 256));
+        }
+        const pTag = document.querySelector("#p2");
+        pTag.style.color = `rgb(${textcolorArr.toString()})`;
+      }, 100);
+    }
+    function backgroundcolor() {
+      shit = setInterval(function () {
+        const backgroundcolorArr = [];
+        for (let i = 0; i < 3; i++) {
+          backgroundcolorArr.push(parseInt(Math.random() * 256));
+        }
+        const pTag = document.querySelector("#p3");
+        pTag.style.backgroundColor = `rgb(${backgroundcolorArr.toString()})`;
+      }, 100);
+    }
+    function size() {
+      shit = setInterval(function () {
+        const sizeArr = [];
+        sizeArr.push(parseInt(Math.random() * 50 + 1));
+        const pTag = document.querySelector("#p4");
+        pTag.style.fontSize = `${sizeArr}pt`;
+      }, 100);
+    }
+  </script>
+</html>
