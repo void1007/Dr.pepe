@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p id="p1">안녕하냐? 아이디가 p1인 p태그다.</p>
+  <br />
+  <p id="p2">안녕하냐? 아이디가 p2인 p태그다.</p>
+  <br />
+  <p class="p1" id="p3">안녕하냐? 아이디가 p3이고 클래스가 p1인 p태그다.</p>
+  <br />
+  <p class="p1" id="p4">안녕하냐? 아이디가 p4이고 클래스가 p1인 p태그다.</p>
+  <br />
+  <button onclick="textchange()">
+    p1 텍스트 '변경된 내용입니다.' 로 변경
+  </button>
+  <button onclick="textcolorchange()">p2 텍스트 색상 변경</button>
+  <button onclick="backgroundcolor()">p3 배경색상 변경</button>
+  <button onclick="size()">p4 폰트 사이즈 변경</button><br><br>
+  이름 : <input id="input1"/><br>
+  <button onclick="getInput1()" value="">input1 데이터 가져오기</button><br>
+  <button onclick="getInput2()" value="">input1 데이터를 변경하기</button><br>
+  <button onclick="getInput3()" value="">input1에 입력한 색상으로 p1 배경색 변경</button><br>
+</body>
+<script>
+  // const p1 = document.getElementById("p1")
+  //console.log(p1);
+  // console.log(p1.innerHTML);
+  // p1.innerHTML = "변경된 다른값";
+  // p1.style.backgroundColor = "orange";
+  // p1.style.color = "green";
+
+  // const p4 = document.getElementById("p4");
+  // p4.innerHTML = "호박 나이트 초대가수 : 남진";
+  // p4.style.backgroundColor = "lightblue"
+  // p4.style.color = "purple"
+  function textchange(){
+    const p1 = document.getElementById("p1");
+    p1.innerHTML = "변경된 텍스트 입니다."
+  }
+function textcolorchange(){
+  const p2 = document.getElementById("p2");
+  p2.style.color ="lightgreen"
+}
+function backgroundcolor(){
+  const p3 = document.getElementById("p3")
+  p3.style.backgroundColor = "lightgreen"
+}
+function size(){
+  const p4 = document.getElementById("p4")
+  p4.style.fontSize = "5em"
+}
+function getInput1(){
+  const input1 = document.getElementById("input1");
+  //<p>   </p> 여는태그와 닫는태그의 사이에 무언갈 넣을수있을때 innerHTML을 사용가능함
+  alert(input1.value);
+}
+function getInput2(){
+  const input1 = document.getElementById("input1");
+  input1.value = "누르면 뭔가가 될꺼란 기대를 하진마라"
+}
+function getInput3(){
+  const input1 = document.getElementById("input1")
+  const p1 = document.getElementById("p1")
+  p1.style.backgroundColor = input1.value;
+}
+
+</script>
+</html>

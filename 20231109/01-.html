@@ -5,60 +5,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <p id="aa"></p>
+  </body>
   <script>
     let a = 3;
     let b = 4;
-    document.write(`a + b : ${a + b}<br>`);
-    document.write(`a - b : ${a - b}<br>`);
-    document.write(`a * b : ${a * b}<br>`);
-    document.write(`a / b : ${a / b}<br>`);
+    // console.log(a + b);
+    // console.log(a - b);
+    // console.log(a * b);
+    // console.log(a / b);
+    console.log(`a + b = ${a + b}`);
+    console.log(`a - b = ${a - b}`);
+    console.log(`a * b = ${a * b}`);
+    console.log(`a / b = ${a / b}`);
+    document.write(`<h2>a + b : ${a + b}<br></h2>`);
+    document.write(`<h2>a - b : ${a - b}<br></h2>`);
+    document.write(`<h2>a * b : ${a * b}<br></h2>`);
+    document.write(`<h2>a / b : ${a / b}<br></h2>`);
 
     if (a > b) {
       alert("a가 b 보다 큽니다.");
     } else {
       alert("b가 a 보다 큽니다.");
     }
-    document.write(`<hr>`);
-    let num1 = a;
-    let num2 = b;
-    document.write(`<h2>${num1}</h2>`);
-    document.write(`<h2>${num2}</h2>`);
-    document.write(`<hr>`);
-    x = [];
-    for (let x = 1; x < 11; x++) {
-      document.write(`<h2>${x}</h2>`);
-    }
-    document.write(`<hr>`);
-    for (let x = 1; x < 101; x++) {
-      document.write(`<h3>${x}</h3>`);
-    }
-    document.write(`<hr>`);
-    for (let x = 1; x < 101; x++) {
-      if (x % 2 == 0) {
-        document.write(`<h3>${x}<h3>`);
-      }
-    }
-    document.write(`<hr>`);
-    for (let x = 1; x < 101; x++) {
-      if (x % 2 == 1) {
-        document.write(`<h3>${x}</h3>`);
-      }
-    }
+
+    const obj = {};
+    /*const obj2 = new Object{};*/
+    // obj.num1 = a;
+    // obj.num2 = b;
+    obj["num1"] = a;
+    obj["num2"] = b;
+
+    console.log(obj.num1);
+    console.log(obj.num2);
+
+    const xrr = [];
+    // const xrr =new Array();
+    xrr[0] = 1;
+    xrr[1] = 2;
+    xrr[2] = 3;
+    xrr[3] = 4;
+    xrr[4] = 5;
+    xrr[5] = 6;
+    xrr[6] = 7;
+    xrr[7] = 8;
+    xrr[8] = 9;
+    xrr[9] = 10;
+
     document.write(`<hr>`);
 
-    function y() {
+    const hrr = [];
+    for (let x = 1; x < 100; x++) {
+      //  hrr[ x - 1] = x;
+      hrr.push(x);
+    }
+
+    const jrr = [];
+    for (let y = 1; y < 100; y++) {
+      if (y % 2 == 0) {
+        jrr.push(y);
+      }
+    }
+
+    const krr = [];
+    for (let z = 1; z < 100; z++) {
+      if (z % 2 == 1) {
+        krr.push(z);
+      }
+    }
+
+    function showAlert() {
       alert("안녕하냐?");
     }
-    let w = parseInt(prompt("입력1"));
-    let z = parseInt(prompt("입력2"));
+    showAlert();
 
-    function gay(num1, num2) {
-      let wval = w.value;
-      let zval = z.value;
-      console.log(w + z);
+    //사용하는 방법 -->함수명+()
+    function sum(g, y) {
+      console.log(g + y);
     }
 
-    gay(w, z);
+    sum(11, 11);
+    function sum2(x, y) {
+      //1.p태그를 가져온다.
+      const pTag = document.querySelector("#aa");
+      //document.getElementById();
+
+      //2.가져온 p태그에 x + y의 값을 추가한다.
+      //<p id="aa"></p>
+      pTag.innerHTML = `<h2>${x + y}</h2>`;
+    }
+    sum2(22, 22);
   </script>
 </html>
