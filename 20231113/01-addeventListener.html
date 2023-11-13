@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+
+</style>
+<body>
+<button id="btn">클릭한다고 해서 뭔가가 될꺼란 기대는 하지마라!</button>  
+<p id="p1">클릭해도 안된다면 함수를 좀 제대로봐라</p>
+<input type="text" id="input1"/>
+
+</body>
+<script>
+
+const btn = document.getElementById("btn");
+btn.addEventListener("click",function(){
+  alert("요를레이히");
+});
+//addEventListener()함수
+//어떤 대상 요소에 이벤트 핸들러(함수)를 할당한다.
+const p1 = document.getElementById("p1");
+p1.addEventListener("dblclick",function(){
+  alert(p1.innerHTML);
+})
+/*p1.addEventListener("contextmenu",function(){
+  alert("마우스 우클릭은 벤이다. 꼽냐??");
+})*/
+/*const input1 = document.getElementById("input1");
+input1.addEventListener("keydown",function(event){
+console.log(event);
+})*/
+input1.addEventListener("keyup",function(event){
+console.log(event);
+})
+</script>
+
+</html>
