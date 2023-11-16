@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>02-changeimage</title>
+  </head>
+  <body>
+    <img
+      id="image"
+      src="../resources/img/떡락.jpeg"
+      width="500px"
+      height="500px"
+    />
+    <input
+      type="button"
+      onclick="changeImage()"
+      width="120"
+      height="100"
+      value="눌러봐랔ㅋㅋ"
+    />
+  </body>
+  <script>
+    function changeImage() {
+      const img = document.getElementById("image");
+      //img.src = "../resources/img/moneypepe.jpg";
+      img.setAttribute("src", "../resources/img/moniter.gif");
+      
+// img.getAttribute("src");
+// img.getAttribute("id");
+// img.getAttribute("class");
+    }
+  </script>
+</html>

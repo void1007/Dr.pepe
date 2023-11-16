@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>03-changeon&off</title>
+  </head>
+  <style>
+    #wrapper {
+      width: 500px;
+      height: 500px;
+      background: linear-gradient(135deg, gray, white);
+      border-radius: 50%;
+      z-index: -1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #imgwrapper {
+      width: 80%;
+      height: 80%;
+      border-radius: 50%;
+      border: 3px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 0;
+    }
+    #imgwrapper.on{
+      border: 20px solid black;
+    }
+    img {
+      width: 50%;
+      height: 50%;
+      filter: contrast(0%);
+    }
+    img.on {
+      filter: opacity(0.5) drop-shadow(0 0 0 red) saturate(1000%);
+    }
+    img:hover{
+      cursor: pointer;
+    }
+  </style>
+  <body>
+    <div id="wrapper">
+      <div id="imgwrapper" class="on">
+      <img id="image" src="/20231116/전원버튼.png" class="on"/>
+      </div>
+    </div>
+  </body>
+  <script>
+    const imgTag = document.querySelector("img");
+    const divTag = document.querySelector("#imgwrapper");
+    imgTag.addEventListener("click",function(){
+          imgTag.classList.toggle("on");
+          divTag.classList.toggle("on");
+    })
+  </script>
+</html>

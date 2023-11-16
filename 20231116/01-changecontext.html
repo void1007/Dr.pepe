@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>01-changecontext</title>
+</head>
+<style>
+  div{
+    font-size: 32px;
+  }
+  a{
+    font-size: 16px;
+  }
+</style>
+<body>
+  <div id="ex">우산을 안가져 왔는데 나는 어떻게 해야하는가?</div><br>
+    <a href="#" onclick="get()">div 요소 내용 가져오기</a><br>
+    <!-- <a href="#" onclick="set(`걍 맞고가라`)">div 요소 내용 변경하기</a><br> -->
+    <a href="#" onclick="set()">div 요소 내용 변경하기</a><br>
+  
+</body>
+<script>
+  function get(){
+    const val = document.getElementById("ex").innerHTML;
+    alert(val);
+  }
+  function set(){
+    const userstr = prompt("바꿀 내용을 적어라")
+    document.getElementById("ex").innerHTML = userstr;
+  }
+</script>
+</html>
