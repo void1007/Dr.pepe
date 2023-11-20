@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>01-typing game</title>
+    <link rel="stylesheet" href="/20231120/typing game.css" />
+  </head>
+  <body>
+    <div id="container">
+      <input id="input" type="text" placeholder="단어적어" />
+    </div>
+  </body>
+  <script>
+    const words = [
+      "토트넘",
+      "첼시",
+      "맨시티",
+      "울버햄튼",
+      "아스톤빌라",
+      "리버풀",
+      "본머스",
+      "아스날",
+    ];
+    const container = document.querySelector("#container");
+    console.log(container.offsetWidth, container.offsetHeight);
+    const maxPositionX = container.offsetWidth - 90;
+    const maxPositionY = container.offsetHeight - 100;
+    function init() {
+      words.forEach(function (el) {
+        const span = document.createElement("span");
+        span.classList.add("word");
+        span.setAttribute("id",el);
+        span.innerHTML = el;
+        span.style.top = `${Math.floor(Math.random() * (maxPositionY - 20)) + 20}px`;
+        span.style.left = `${Math.floor(Math.random() * (maxPositionX - 20)) + 20}px`;
+        container.append(span);
+      });
+    }
+
+    const input = document.querySelector("#input");
+input.addEventListener("change",function(){
+ const word = document.querySelector(`span[id = ${input.value}]`);
+ console.log(word);
+ if(word != null){
+ word.remove();
+ const leftwords = document.querySelectorAll(".word");
+ console.log(leftwords);
+ input.value = "";
+ if(leftwords.length == 0){
+   alert("success!🏆");
+   if(confirm("리?")){
+ window.location.reload();
+}
+  }
+}
+ 
+})
+
+    init();
+  </script>
+</html>
