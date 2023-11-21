@@ -37,6 +37,32 @@
         container.append(span);
       });
     }
+function wordRain(){
+  const words = document.querySelectorAll(".word");
+  words
+  console.log(words[0].getBoundingClientRect().top);
+
+}
+
+    function wordRain(){
+    const words = document.querySelectorAll(".word");
+  console.log(words[0].getBoundingClientRect().bottom);
+    setInterval(function(){
+      words.forEach(function(el){
+        const rectTop = el.getBoundingClientRect().top
+        el.style.top = `${rectTop-75}px`
+        if(el.getBoundingClientRect().bottom > 1000){
+          el.remove();
+          alert("겜터짐 ㅅㄱ, ㅈㅈ")
+        }
+        colorArr = [];
+        for(let i = 0; i < 3; i++){
+colorArr.push(Math.floor(Math.random()*256));
+}
+el.style.color = `rgb(${colorArr.toString()})`;
+      })
+    },1000);
+    }
 
     const input = document.querySelector("#input");
 input.addEventListener("change",function(){
@@ -56,7 +82,8 @@ input.addEventListener("change",function(){
 }
  
 })
-
     init();
+wordRain();
+input.focus();
   </script>
 </html>

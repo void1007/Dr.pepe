@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>03-htmlandtext</title>
+</head>
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<body>
+  <p>1<span>상하이 조</span></p>
+  <p>2<span>시라소니</span></p>
+  <p>3<span>미와경부</span></p>
+  <p>4<span>평양박치기</span></p>
+  <p>5<span>구마적</span></p>
+  <p>6<span>신마적</span></p>
+</body>
+<script>
+// alert($("p").html());//innerHTML
+// alert($("p").text());
+$("p").each(function(i,v){
+console.log(v);
+alert($(v).html());
+})
+// forEach(function(el==//value,index,array))
+</script>
+</html>
