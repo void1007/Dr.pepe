@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+</head>
+
+<body>
+  <a href="http://tjdaewoo.co.kr"/>DW아카데미</a><br><br>
+  <a href="mailto:dltmdqls15@gmail.com"/>pepe에게 메일보내기</a><br><br>
+  <div><label>Many pepe</label></div>
+  <div>
+    <img src="../resources/img/토트넘페페.png" id="img1">
+    <img src="../resources/img/피콜로페페.jpg" id="little-pepe" title="나메크페페">
+    <img src="../resources/img/김성모.jpg" id="김성모" alt="김성모">
+    <img src="../resources/img/떡락.jpeg" id="rori" title="fx전사">
+    <img src="../resources/img/이타치페페.jpg" id="이타치페페" alt="itachi">
+    <img src="../resources/img/fuckpepe.jpg" id="fuckpepe" title="법규페페">
+    <img src="../resources/img/양봉페페.png">
+  </div>
+  <div id="someDiv">이곳은 ID속성이 <tt>someDiv</tt>인 &lt;div&gt;태그 임</div>
+  <form><br>
+    <div>
+      <label>Text</label>  <input type="text" id="aTextField" name="someTextField"/>
+    </div><br>
+    <button type="submit" id="submitButton">Submit</button>   <input type="button" value="눌러보셈ㅋ~">
+  </form>
+</body>
+<script>
+  
+$("img").css("width","200px").css("height","200px").css("border","3px solid red")
+$("input[type=button]").css("border","2px solid blue").css("backgroundColor","yellowgreen")
+$("img[id != img1]").css("border","3px dashed yellowgreen");
+$("img[alt]").css("border","gray dotted 3px")
+$("img[src $= png]").css("border","3px solid pink ")
+$("a[href ^= mailto]").css("backgroundColor","lightblue").css("text-decoration","none")
+$("a[href ^= http]").css("color","green")
+
+
+</script>
+</html>

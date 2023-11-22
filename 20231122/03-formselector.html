@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+</head>
+<body>
+  <p><h1>회원가입</h1></p>
+  <br>
+  <br>
+  <form action="a-test.html" method="get">
+    <fieldset>
+    <legend>필수 입력 사항</legend>
+    <p>ID<input type="text" name="id" placeholder="아이디 10글자 이내"> <button type="button" value="중복확인">중복확인</button></p>
+    <p>비밀번호<input type="password" name="password" placeholder="영문,숫자,특수문자 포함 8자"></p>
+    <p>비밀번호 확인<input type="password" name="pwk"></p>
+    <p>Email<input type="text" name="Email">
+      <select aria-placeholder="직접입력">
+        <option>직접입력</option>
+        <option>@google.com</option>
+        <option>@naver.com</option>
+        <option>@daum.net</option>
+        <option>@yahoo.co.kr</option>
+      </select></p>
+      </fieldset>
+  <fieldset>
+    <legend>추가 정보</legend>
+    <p><h2>프로필사진</h2></p><input type="file" name="photo" accept="image/jpeg,image/gif">선택된 파일 없음
+    <br>
+    <br>
+    성별: <input type="radio" name="gender" id="male">
+    <label for="male">남자</label>  
+    <input type="radio" name="gender" id="female">
+    <label for="female">여자</label>
+    <br>
+    <br>
+    생년월일: <input type="date" name="day">
+    <br>
+    <br>
+    취미
+    <br>
+    <input type="checkbox" name="favor" id="a">
+    <label for="a">야구</label> 
+    <input type="checkbox" name="favor" id="b">
+    <label for="b">농구</label>  
+    <input type="checkbox" name="favor" id="c">
+    <label for="a">축구</label> 
+    <br> 
+    <input type="checkbox" name="favor" id="d">
+    <label for="d">공부</label>  
+    <input type="checkbox" name="favor" id="e">
+    <label for="e">음악감상</label> 
+    <br>
+    <input type="checkbox" name="favor" id="f">
+    <label for="f">기타</label> <input type="text" name="anyting" value="" placeholder="내용을 입력하세요"> 
+    <br>
+    <br>
+    <br>
+    <h2>자기소개</h2>
+<textarea rows="5" cols="50" name="introduce"></textarea>
+
+
+
+  </fieldset>
+  <br>
+  <input type="submit" name="회원가입" value="회원가입"> <input type="reset" name="다시입력" value="다시입력"> <input type="button" onclick="history.go(-1)" name="이전으로" value="이전으로"></form>
+</body>
+<script>
+// input 요소 테두리 lime, 배경색 핑크
+//input type이 button인 요소 배경색 노랑
+//Type이 submit 요소의 배경색 녹색
+//type이 password,text 인 요소의 테두리 파랑
+//type이 file 인 요소의 테두리 빨강
+
+ $(":input").css("border","3px solid lime").css("backgroundColor","pink")
+$(":button").css("background","yellow")
+$(":submit").css("backgroundColor","green");
+$(":text").css("border","3px solid blue");
+$(":text,:password").css("border","3px solid blue");
+$(":file").css("border","3px solid red")
+
+
+</script>
+</html>
