@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+</head>
+<body>
+  <input type="text" name="id" value="pepe" disabled/><br>
+  <input type="password" name="pass"><br><br>
+  <select name="mySelect">
+    <option>option1</option>
+    <option selected>option2</option>
+    <option>option3</option>
+    <option>option4</option>
+  </select>
+  <br><br>
+  <textarea name="enTextarea" cols="20" rows="10">text</textarea><br>
+  취 미 :
+  <input type="checkbox" value="이름" checked/>태조왕건 100번보기
+  <input type="checkbox" value="이름" />물구나무서서 라면먹기
+  <input type="checkbox" value="이름" />개미관찰
+  <input type="checkbox" value="이름" />전자렌지에 비누돌리기
+  <input type="checkbox" value="이름" />전국노래자랑틀어서 댄스배틀
+  <input type="checkbox" value="이름" />휴지심지 밖에 던지기<br>
+  <input type="button" value="확인" disabled/><br>
+</body>
+<script>
+$(":disabled").css("border","3px solid red");
+$("input:disabled").css("border","3px dashed gray")
+$(":selected").css("backgroundColor","orange")
+//disabled라 적혀있지않으면 전부 enabled로 인식한다.
+$(":enabled").css("border","3px solid teal")
+console.log($("input:checked"));
+</script>
+</html>

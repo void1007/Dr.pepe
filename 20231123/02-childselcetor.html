@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+</head>
+<body>
+  <p>게이들</p>
+  <ol>
+    <li>샘 스미스</li>
+    <li>홍석천</li>
+    <li>빌리</li>
+    <li>반다크홈</li>
+  </ol>
+  <p>남자들에게 인기많은 남자들</p>
+  <ol>
+    <li>엘링 홀란드</li>
+    <li>케빈 데브라이너</li>
+    <li>좆두</li>
+    <li>제임스 메디슨</li>
+  </ol>
+</body>
+<script>
+$("li:first-child").css("border","2px red solid")
+$("li:first").css("backgroundColor","lightblue")
+$("li:last-child").css("background","teal")
+$("li:last").css("color","pink")
+$("li:nth-child(2)").not("li:first").css("color","yellowgreen")
+//$("li:only-child").css("border","dashed 2px gray") -->외동이여야됨 형제자매가 없어야된다.
+
+</script>
+</html>
