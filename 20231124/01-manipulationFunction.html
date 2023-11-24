@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>01-manipulationFunction</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  </head>
+  <style>
+    
+    p{
+      cursor:pointer
+    }
+    img{
+      width: 250px;
+      height: 250px;
+    }
+  </style>
+  <body>
+    <!-- <p id="container">클릭해보세요.</p> -->
+    <p title="pepe1">이미지 1</p>
+    <p title="pepe2">이미지 2</p>
+    <p title="pepe3">이미지 3</p>
+    <p title="pepe4">이미지 4</p>
+
+
+
+
+  </body>
+  <script>
+    // $("#container").on("click", function () {
+    //   $("#container").append(`<span> 새로 생성된 span 태그 입니다.</span>`);
+    // });
+    const imgArr = ["diopepe.jpg","hotdog pepe.jpg","godpepe.jpg","가면페페.png"]
+    $("p").on("click",function(){
+      const idx = $(this).index();
+      //$(this).append(`<img src="../resources/img/${imgArr[idx]}"/>`)
+      //$(`<img src="../resources/img/${imgArr[idx]}"/>`).appendTo(this);
+      //$(this).prepend(`<img src="../resources/img/${imgArr[idx]}"/>`)
+      //$(`<img src="../resources/img/${imgArr[idx]}"/>`).prependTo(this);
+      
+      //$(this).after(`<img src="../resources/img/${imgArr[idx]}"/>`)
+      //$(`<img src="../resources/img/${imgArr[idx]}"/>`).insertAfter(this);
+      //$(this).before(`<img src="../resources/img/${imgArr[idx]}"/>`)
+      $(`<img src="../resources/img/${imgArr[idx]}"/>`).insertBefore(this);
+    })
+    // $("[title=pepe1]").on("click",function(){
+    //   $("[title=pepe1]").css("cursor","pointer").append(`<img src="../resources/img/diopepe.jpg" width="100px" height="100px">`);
+    // })
+    // $("[title=pepe2]").on("click",function(){
+    //   $("[title=pepe2]").css("cursor","pointer").append(`<img src="../resources/img/hotdog pepe.jpg" width="100px" height="100px">`);
+    // })
+    // $("[title=pepe3]").on("click",function(){
+    //   $("[title=pepe3]").css("cursor","pointer").append(`<img src="../resources/img/godpepe.jpg" width="100px" height="100px">`);
+    // })
+    // $("[title=pepe4]").on("click",function(){
+    //   $("[title=pepe4]").css("cursor","pointer").append(`<img src="../resources/img/가면페페.png" width="100px" height="100px">`);
+    // })
+    
+  </script>
+</html>
