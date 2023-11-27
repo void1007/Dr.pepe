@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<style>
+  .wrapper{
+    width: 500px;
+  }
+  .wrapper *{
+    display: block;
+    border: 2px solid orchid;
+    color: orchid;
+    padding: 10px;
+    margin: 20px;
+  }
+  ul{
+    list-style: none;
+  }
+</style>
+<body>
+  <div class="wrapper">wrapper div
+<div>div
+  <ul>ul
+    <li>li
+      <span>span</span>
+    </li>
+  </ul>
+</div>
+<div>div
+  <ul>ul
+    <li>li
+      <span>span</span>
+    </li>
+  </ul>
+</div>
+  </div>
+</body>
+<script>
+//$(".wrapper").find("ul,span").css({
+//  color:"blue",
+//  border:"2px solid blue"
+//})
+// $("span").parentsUntil("div").css({
+//   color:"aqua",
+//   border:"2px solid aqua"
+// })//동일한 소스가 있을시 가장가까운 소스가 먼저 적용된다.
+
+//1.첫번째 div의 li에서 시작해서 두번째 div의 span 선택
+$($(".wrapper > div")[0]).find("li").parents("div").next().find("span").css({
+  color:"green",
+  border:"green 2px solid"
+});
+//2.두번째 div의 span에서 시작해서 첫번째 div의 span선택
+$("span:last").parents(".wrapper").find("span").css({
+  color: "black",
+  border:"black 2px dashed"
+})
+</script>
+</html>

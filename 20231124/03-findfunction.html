@@ -65,5 +65,21 @@
     //   color:"red",
     //   border:"2px solid red"
     // })
+    //$("li.start").parent().css({
+    //  color:"red",
+    //  border:"2px solid red"
+    //})
+
+    // $("li.start").parents("div").css({
+    //   color:"red",
+    //   border:"2px solid red"
+    // })
+
+    $("li.start").parentsUntil("body").css({
+      color:"red",
+      border:"2px solid red"
+    })
+
+
   </script>
 </html>

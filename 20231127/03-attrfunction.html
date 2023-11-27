@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<body>
+  <style>
+    div{
+      border: 2px solid blue;
+    }
+    img{
+      width: 200px;
+      height: 200px;
+    }
+  </style>
+  <div>
+    <img src="../resources/img/pepemingo.jpg" title="도플라밍고">
+    <img src="../resources/img/피콜로페페.jpg" title="피콜로">
+    <img src="../resources/img/fight pepe.png">
+    <img src="../resources/img/나폴레옹페페.jpg">
+    <img src="../resources/img/군인과잼민이페페.jpg">
+    <br>
+    <button onclick="setTitle()">눌러보세요</button>
+  </div>
+</body>
+<script>
+function setTitle() {
+  //1. img 태그 전체 요소를 가져온다.
+  const imgTags = $("img");
+
+  //2. 전체 요소에 대한 반복문을 실행하여 title에 src와 똑같은 값을 넣어준다.
+  imgTags.each(function(i,el){
+    const srcVal = $(el).attr("src");
+    $(el).attr("title", srcVal);
+  })
+}
+</script>
+</html>
