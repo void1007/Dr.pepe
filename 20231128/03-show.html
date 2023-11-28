@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  P{
+    font-size: 32PX;
+  }
+</style>
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<body>
+  <p>GS25에서 3900원짜리 컵라면을 처먹었는데 개맛대가리 없어서 테이블에 엎어버리고 싶은 심경이였다.</p>
+  <button id="HIDE">HIDE</button>
+  <button id="SHOW">SHOW</button>
+  <button id="TOGGLE">TOGGLE</button>
+</body>
+<script>
+$("#HIDE").on("click",function(){
+  $("P").hide(5000)
+})
+$("#SHOW").on("click",function(){
+  $("P").show(5000)
+})
+$("#TOGGLE").on("click",function(){
+  $("P").toggle(5000)
+})
+
+</script>
+</html>

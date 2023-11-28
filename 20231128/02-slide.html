@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<style>
+  #flip,#panel{
+    padding: 5px;
+    font-size: 32px;
+    text-align: center;
+    background-color: #555;
+    color: white;
+    border: 2px solid #666;
+    border-radius: 3px;
+    height: 150px;
+    cursor: pointer;
+  }
+  #panel{
+    display: none;
+  }
+</style>
+<body>
+  <button id="stop">Stop sliding</button>
+  <br><br><br><br><br><br><br><br><br>
+  <div id="flip">전사가 되고싶은 자는 나에게...</div>
+  <div id="panel">현역 판정되셨습니다.</div>
+</body>
+<script>
+  $("#flip").on("click",function(){
+    //$("#panel").slideUp(1000);
+    //$("#panel").slideDown(1000);
+    $("#panel").slideToggle(2000);
+  })
+  $("#stop").on("click",function(){
+    $("#panel").stop();
+  })
+</script>
+</html>
