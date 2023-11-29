@@ -13,26 +13,46 @@
     display: none;
       }
       #div1{
-        background-color: aqua;
+        background-color: black;
       }
       #div2{
-        background-color: yellowgreen;
+        background-color: white;
       }
       #div3{
-        background-color: orangered;
+        background-color: red;
       }
 </style>
 <body>
-  <p>일어나라 두한아! 상대는 애비를 죽인 공산당이야 일어나!</p>
+  <p style="font-size: 32px; color: red; font-weight: bold;">卍 나의 투쟁! 卍</p>
   <button id="FadeIn">FadeIn</button>
   <button id="FadeOut">FadeOut</button>
   <button id="FadeToggle">FadeToggle</button>
   <button id="FadeTo">FadeTo</button>
+  <br><br>
   <div id="div1"></div>
   <div id="div2"></div>
   <div id="div3"></div>
 </body>
 <script>
-
+$("#FadeIn").on("click",function(){
+  $("#div1").fadeIn();
+  $("#div2").fadeIn("slow")
+  $("#div3").fadeIn(2000)
+})
+$("#FadeOut").on("click",function(){
+  $("#div1").fadeOut();
+  $("#div2").fadeOut("slow")
+  $("#div3").fadeOut(2000)
+})
+$("#FadeToggle").on("click",function(){
+  $("#div1").fadeToggle();
+  $("#div2").fadeToggle("slow")
+  $("#div3").fadeToggle(2000)
+})
+$("#FadeTo").on("click",function(){
+  $("#div1").fadeTo(1000,0.15).slideUp();
+  $("#div2").fadeTo(2000,0.4).slideUp()
+  $("#div3").fadeTo(3000,0.7).slideUp()
+})
 </script>
 </html>
