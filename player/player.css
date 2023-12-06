@@ -1,0 +1,48 @@
+*{
+  box-sizing: border-box;
+}
+
+html,body{
+  background-color: black;
+  margin: 0;
+  font-family: Pretendard;
+}
+
+
+.container{
+  background-color: skyblue;
+  height: 96px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 16px 24px;
+  gap: 16px;
+}
+
+.right{
+  display: flex;
+  color: blue;
+  justify-content: right;
+align-items: center;
+font-size: 16px;
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left{
+  font-size: 24px;
+  color: blue;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 16px;
+  font-weight: 600;
+}
+
+span{
+  color: teal;
+  font-weight: 400;
+}
