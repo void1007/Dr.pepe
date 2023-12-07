@@ -1,16 +1,19 @@
-*{
+* {
   box-sizing: border-box;
 }
 
-html{
+html {
   font-family: Pretendard;
 }
 
-body{
+body {
   background-color: #000;
+  background-image: url(../resources/img/북괴수장.jpg);
+  backdrop-filter: blur(15px);
   margin: 0;
-  color: #fff;
+  color: black;
   font-size: 16px;
+  position: relative;
 }
 .prograss-bar {
   height: 6px;
@@ -23,7 +26,8 @@ body{
   height: 100%;
 }
 
-.player-main{
+
+.player-main {
   background-color: rgba(48, 48, 55, 0.7);
   display: flex;
   align-items: center;
@@ -31,33 +35,34 @@ body{
   padding: 16px 40px;
 }
 
-.info{
+.info {
   display: flex;
   align-items: center;
   gap: 16px;
 }
 
-.current{
+.current {
   border-radius: 14px;
 }
 
-.title{
+.title {
   color: #d9d9d9;
 }
 
-.artist{
+.artist {
   color: #8c8993;
 }
 
-.info, .time{
+.info,
+.time {
   flex-basis: 300px;
 }
 
-.time{
+.time {
   text-align: right;
   color: #8c8993;
 }
-.controls{
+.controls {
   display: flex;
   justify-content: center;
   align-items: center;
