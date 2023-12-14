@@ -1,0 +1,177 @@
+nav {
+  height: 120px;
+  background-color: transparent;
+  border-bottom: 1px solid #d9d9d9;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+}
+
+.container-header {
+  margin: 0px 16px;
+}
+
+.container-header a {
+  text-decoration: none;
+  color: black;
+}
+
+.container-header span {
+  font-size: 8px;
+  display: block;
+  text-align: center;
+}
+
+.navbar-nav {
+  margin: 0 160px;
+}
+
+.navbar-brand {
+  padding: 0 32px 0 16px;
+  border-left: black 1px solid;
+}
+
+.navbar-collapse {
+  justify-content: space-between;
+}
+
+.navbar-nav {
+  margin: 0;
+  gap: 8px;
+}
+
+.nav-item {
+  display: flex;
+  padding: 0;
+  margin: 0 24px;
+  gap: 16px;
+}
+
+.dropdown-menu {
+  text-align: center;
+  padding: 0 16px;
+}
+
+.dropdown-item {
+  margin: 16px 0;
+}
+
+.carousel-item img {
+  border-radius: 0 0 160px 0;
+}
+
+.carousel-control-prev {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 105px;
+  height: 105px;
+  border-radius: 50%;
+  top: 50%;
+}
+
+.carousel-control-next {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 105px;
+  height: 105px;
+  border-radius: 50%;
+  top: 50%;
+}
+
+.carousel-in {
+  padding: 21px 40px;
+  z-index: 1;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  font-size: 15px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
+  width: 202.17px;
+  height: 73.5px;
+  display: flex;
+  color: white;
+  border: 3px solid white;
+}
+
+.carousel-in a{
+  text-decoration: none;
+  color: white;
+}
+
+.carousel-header {
+  top: 20%;
+  left: 40%;
+  position: absolute;
+  z-index: 1;
+  color: #fff;
+  display: flex;
+}
+
+.carousel-header h1 {
+  font-size: 172px;
+  display: flex;
+  font-weight: bold;
+}
+
+.carousel-header p {
+  padding-top: 16px;
+  font-size: 32px;
+}
+
+.carousel-header span {
+  font-size: 32px;
+  padding-top: 136px;
+}
+
+.carousel-content {
+  position: absolute;
+  z-index: 1;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  top: 37.5%;
+  left: 40%;
+}
+
+.btn-1 {
+  background-color: #5901e6;
+  width: 188px;
+  height: 188px;
+  z-index: 1;
+  position: absolute;
+  border-radius: 50%;
+  color: white;
+  border: none;
+  right: 0;
+  bottom: 0;
+  padding: 24px;
+}
+
+.mid-conten {
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+  gap: 36px;
+}
+
+.row {
+  justify-content: space-between;
+ margin: 80px 0 0;
+}
+
+.col-lg-5 {
+  text-align: left;
+  border-radius: 40px;
+  background-color: #d9d9d9;
+  height: 320px;
+  padding: 56px 56px 16px;
+}
+
+.col-lg-5 h2{
+  margin: 16px 0 ;
+}
+
+.col-lg-5 p{
+  margin: 16px 0;
+  font-size: 14.5px;
+}
