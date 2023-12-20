@@ -167,10 +167,76 @@ nav {
 }
 
 .li-2 {
-  margin-top: 12px;  
-}
-
-.li-3{
   margin-top: 12px;
 }
 
+.li-3 {
+  margin-top: 12px;
+}
+
+.cards {
+  width: 100%;
+  padding: 0;
+  gap: 32px;
+}
+
+.btns h3 {
+  font-size: 44px;
+  font-weight: bold;
+  margin: 0;
+  padding: 70px 0 35px;
+}
+
+.btns p {
+  font-size: 17px;
+  margin: 0;
+}
+
+.cards div {
+  background-color: #f5f5f8;
+  width: 393px;
+  height: 521px;
+  border-radius: 16px;
+  padding: 52px 44px;
+}
+
+.cards img{
+  border-radius: 16px;
+}
+
+.pre-btn {
+  width: 50px;
+  height: 50px;
+}
+
+.next-btn {
+  width: 50px;
+  height: 50px;
+}
+
+.btn-all {
+  display: flex;
+  position: relative;
+  height: 150px;
+  width: 120px;
+  margin-top: 240px;
+}
+
+.btn-all > div {
+  position: absolute;
+  top: 0;
+}
+
+
+.btns{
+  width: 524px;
+  height: 521px;
+  z-index: 1;
+  position: absolute;
+  left: 240px;
+  background-color: white;
+}
+
+#carouselExampleAutoplaying{
+  padding: 0 0 143px;
+}
