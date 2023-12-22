@@ -217,15 +217,16 @@ nav {
   display: flex;
   width: 75%;
   gap: 32px  ;
+  position: relative;
+  z-index: 1;
+  right: 0;
 }
 
 .carousel2{
   width: 521px;
   height: 524px;
-  position: absolute;
-  /* background-color: #fff; */
-  background-color: teal;
-  z-index: 1;
+  position: relative;
+  background-color: #fff;
   padding-right: 30px;
 }
 
@@ -255,4 +256,152 @@ nav {
   width: 50px;
   height: 50px;
   position: relative;
+}
+
+#carouselExampleAutoplaying{
+  display: flex;
+  position: relative;
+  z-index: -1;
+  justify-content: center;
+  padding: 0 0 143px;
+}
+
+.circle{
+  display: block;
+  border-radius: 50%;
+  width: 198px;
+  height: 198px;
+  border: #09847f solid 52px;
+  position: relative;
+  z-index: -1;
+  left: 99px;
+  top: -99px;
+}
+
+.bottom-card{
+  justify-content: space-between;
+  display: flex;
+  background-color: #09847f;
+  width: 700px;
+  height: 235px;
+  padding: 70px 85px;
+  border-radius: 72px 0 0 72px;
+  border-right:1px solid #3aaca1 ;
+}
+
+.bottom-card h3{
+  font-weight: bold;
+  font-size: 28px;
+  color: white;
+  padding: 0 0 16px;
+  margin: 0;
+}
+
+.bottom-card p {
+  font-size: 17px;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.bottom-card2{
+  background-color: #09847f;
+  width: 700px;
+  height: 235px;
+  border-radius:0 72px 72px 0;
+  padding: 70px 85px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom-card2 h3{
+  font-weight: bold;
+  font-size: 28px;
+  color: white;
+  padding: 0 0 16px;
+  margin: 0;
+}
+
+.bottom-card2 p{
+  font-size: 17px;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.bottom-container{
+  top: 240px;
+  z-index: 2;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.bottom-pic{
+  display: flex;
+  border-radius: 240px 0 0 0;
+  width: 100%;
+  height: 680px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.bot-img{
+  border-radius: 240px 0 0 0;
+  width: 100%;
+  position: relative;
+  z-index: -1;
+}
+
+.bot-main{
+  display: block;
+  position: relative;
+  top: 400px;
+  z-index: 1;
+}
+
+.bot-main img{
+ position: relative;
+ right: -45%;
+}
+
+.bot-p{
+  display: block;
+  margin: 0;
+  color: white;
+  font-size: 26px;
+  text-align: center;
+}
+
+.bottom-content{
+  background-color:#020308;
+padding: 40px 251.5px 60px;
+}
+
+.content-ul1{
+  color: white;
+  display: flex;
+  margin: 0;
+  gap: 32px;
+  margin-bottom: 15px;
+  font-size: 13px;
+  padding: 0;
+}
+
+.content-ul2{
+  font-size: 13px;
+  list-style-type: none;
+  display: flex;
+  color: white;
+  margin-bottom: 15px;
+  padding: 0;
+}
+
+.content-ul2 :nth-child(1){
+  margin-right: 19px;
+}
+
+.bottom-content p{
+  font-size: 15px;
+  padding-top: 15px;
+  color: #fff;
 }
