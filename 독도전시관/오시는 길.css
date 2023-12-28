@@ -1,5 +1,5 @@
 nav {
-  height: 115.59px;
+  height: 75.5px;
   position: fixed;
   top: 0;
   left: 0;
@@ -69,74 +69,108 @@ width: 100%;
 }
 
 .wrapper{
-  margin: 0px 251.5px;
-  padding: 180px 0 160px;
+padding: 180px 0 160px;
+display: flex;
+justify-content: center;
 }
 
-.title{
-  text-align: center;
+.content{
+  height: 841.27px;
+  width: 100%;
+  margin: 0 251.5px;
 }
 
-.title p{
+.content iframe{
+  height: 500px;
+  width: 100%;
+}
+
+.square{
+  width: 300px;
+  height: 300px;
+  background-color: #393846;
+  padding: 50px;
+  box-shadow: 0 40px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+  bottom: 150px;
+}
+
+.square p{
   font-size: 17px;
+  color: #aaaaaa;
   margin: 0;
 }
 
-.title strong{
-  font-size: 46px;
-  margin-bottom: 40px;
+.square b{
+  font-size: 38px;
+  color: #fff;
+}
+
+.big-map{
+  height: 26px;
+  width: 93.95px;
+  display: block;
+  background-color: #fff;
+  padding: 5px 14px;
+  cursor: pointer;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border-radius: 2px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 4px -1px;
+  position: relative;
+  left: 16px;
+  top:36px;
+}
+
+.big-map a{
+  color: #1a73e8;
+  text-decoration: none;
+font-size: 11px;
 }
 
 .main{
+  display: flex;
+}
+
+.info-head{
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding-top: 20px;
+}
+
+
+.information{
+  width: 890px;
+  padding: 0;
+  display: block;
+  height: 182.38px;
+  margin-left: 510px;
   margin-top: 100px;
-}
-
-
-.item-1{
-  display: flex;
-}
-
-.item-1 p{
-  margin: 0;
-  width: 700px;
-}
-
-dl{
-  margin: 0;
-  padding: 40px 0 0 86px;
-  width: 700px;
-}
-
-dt{
-  margin-bottom: 20px;
-  color: #07866d;
-  font-size: 40px;
-}
-
-dd{
-  display: flex;
+  position: relative;
+  top: -300px;
   margin-bottom: 0;
-  margin-top: 15px;
-  width: 614px;
-}
+  height: 182.38px;
+} 
 
-b{
+li p{
   font-size: 18px;
-  width: 170px;
-}
-
-span{
-  font-size: 16.5px;
-}
-
-.item-2{
-  margin-top: 50px;
-  display: flex;
-}
-
-.item-2 p{
   margin: 0;
-  width: 700px;
+}
+
+.title{
+  width: 133.5px;
+  height: 30.59px;
+  font-size: 18px;
+}
+
+p b{
+  font-size: 18px;
 }
 
 .bottom-pic{
@@ -188,6 +222,7 @@ padding: 40px 251.5px 60px;
   margin-bottom: 15px;
   font-size: 13px;
   padding: 0;
+  align-items: center;
 }
 
 .content-ul1 a{
