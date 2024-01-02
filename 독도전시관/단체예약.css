@@ -69,83 +69,125 @@ width: 100%;
 }
 
 .wrapper{
-  margin: 0 251.5px;
   padding: 180px 0 160px;
+  margin: 0 240px;
+  text-align: center;
+}
+
+.wrapper strong{
+  display: block;
+  font-weight: 500;
+  font-size: 37px;
+  margin: bottom 40px; ;
+}
+
+.title-span{
+  color: #07866d;
+}
+
+.btn1{
+  font-weight: bold;
+  align-items: center;
+  display: flex;
+  border: 3px solid #949494;
+  margin-right: 5px;
+  padding: 18px 42px;
+  border-radius: 35px;
+  font-size: 15px;
+  text-decoration: none;
+  color: #949494;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn1 img{
+  margin-left: 18px;
+}
+
+.btn{
+  justify-content: center;
+  display: flex;
+  margin-top: 60px;
+}
+
+.btn2{
+  font-weight: bold;
+  align-items: center;
+  display: flex;
+  padding: 18px 42px;
+  border-radius: 35px;
+  border: 3px solid #07866d;
+  color: #07866d;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  font-size: 15px;
+}
+
+.btn2 img{
+  margin-left: 18px;
+  width: 16px;
+  height: 17px;
+}
+
+.main{
+  margin-top: 60px;
+  width: 100%;
   display: flex;
 }
 
-.wrapper img{
+.main img{
   width: 860px;
-  height: 648px;
 }
 
-.content-1{
-  width: 100%;
-  padding: 65px;
-  background-color: #f7f7f7;
-  height: 648px;
+.main-content{
   border-radius: 0 0 160px 0;
-}
-
-.content-1 b{
   display: block;
-  font-size: 27px;
-  padding-bottom: 15px;
+  width: 100%;
+  
+  background-color: #f7f7f7;
+  padding: 65px;
 }
 
-.txt-1{
-  font-size: 17px;
-  color: #07866d;
+.main-content ul{
+  
+  padding: 0;
+  text-align: left;
+  list-style-type: none;
+}
+
+li{
+  padding: 0;
   margin: 0;
-}
-
-.content-1 ul{
-  list-style-type:none;
-}
-
-.content-1 span{
-  font-size: 17px;
 }
 
 .list-pad{
   padding-top: 40px;
 }
 
-.list-pad b{
-  font-size: 27px;
+.point{
+  font-size: 15px;
+  margin: 0;
+  color: #07866d;
+}
+
+b{
   padding-bottom: 15px;
+  font-size: 25px;
+  margin-bottom: 15px;
 }
 
-.list-pad span{
-  padding: 0;
-  margin: 0;
-}
-
-.content-1 ul{
-  margin: 0;
-  padding: 0;
-}
-
-.content-2{
-  display: flex;
-  width: 100%;
-  padding-top: 100px;
-  margin: 0 240px;
-}
-
-.content-2 b{
-  font-size: 27px;
-  padding: 0 130px 15px 0;
-}
-
-.content-2 ul{
-  margin: 0;
-  padding: 0;
+p{
+  margin-top: 10px;
+  display: block;
   font-size: 17px;
+  margin: 0;
 }
 
-.list-pad2{
-  margin-top: 12px;
+.pad-span{
+  color: black;
+  font-weight: bold;
+  font-size: 17px;
 }
 
 .bottom-pic{
