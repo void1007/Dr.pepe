@@ -81,159 +81,137 @@ nav {
   padding: 0;
 }
 
-.header strong {
-  display: block;
-  font-size: 37px;
-  font-weight: bold;
-  margin: 0 0 40px;
-  text-align: center;
-}
-
-.header span {
-  color: #07866d;
-}
-
-.header p {
+.clean {
+  width: 100%;
+  padding: 0;
   margin: 0;
-  line-height: 1.7;
-  text-align: center;
-  font-size: 17px;
+  display: flex;
 }
 
-.btn-season {
-  margin: 90px 0 30px;
+.head-btn {
   list-style-type: none;
+  margin: 0 0 90px;
+  padding: 0;
   display: flex;
   justify-content: center;
-  padding: 0;
+  align-items: center;
 }
 
-.btn-season li{
-  margin: 0 6px 0 0;
-}
-
-.btn-season li:nth-child(1){
+.head-btn li:nth-child(2) {
   border: 1px solid #07866d;
 }
 
-.active{
+.active {
   color: #09847f;
   padding: 17px 65px;
   background-color: transparent;
   font-size: 18px;
 }
 
-.btn-season button {
+.head-btn button {
   border: 1px solid #ccc;
   background-color: transparent;
   font-size: 18px;
   padding: 17px 65px;
 }
 
-.photos{
+.head-btn li {
+  margin: 0 6px 0 0;
+}
+
+.article-content {
+  width: 100%;
+}
+
+.title {
   display: block;
-  list-style-type: none;
-  padding: 0 0 15px;
-  }
-
-  .photos div{
-    display: flex;
-  }
-
-  .photos li{
-    margin-top: 20px;
-  }
-
-  .margin-li{
-    margin: 20px 2% 0;
-  }
-
-.em-1{
-  font-size: 21px;
-  padding: 28px 0 12px;
- font-style: normal;
-  display: block;
-  opacity: 1;
+  margin: 0px 0px 40px;
   font-weight: 600;
-  color: #333;
-  display: block;
-  text-align: left;
+  font-size: 37px;
 }
 
-.em-2{
-  color: #999;
-  font-weight: bold;
-  font-size: 16px;
-  display: block;
-  font-style: normal;
+.title span {
+  color: #07866d;
+}
+
+.sub-title {
   margin: 0;
-  padding: 0 0 28px;
+  line-height: 1.7;
+  font-size: 17px;
+}
+
+table {
+  margin: 60px auto 100px;
+  width: 1000px;
+}
+
+th {
+  border-bottom: 1px solid #ddd;
+  border-right: #ddd 1px solid;
+  border-top: 1px solid #000;
+  font-weight: bold;
+  font-size: 17px;
+  width: 250px;
+  background-color: #f7f7f7;
+  color: #444;
+  padding: 15px;
+}
+
+td {
+  padding: 15px;
+  font-size: 17px;
+  border-bottom: 1px solid #ddd;
+  border-right: #ddd 1px solid;
+}
+
+th:nth-child(4) {
+  border-right: none;
+}
+
+td:nth-child(4) {
+  border-right: none;
+}
+
+.info {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 50px 0 0;
+  gap: 26px;
+}
+
+.info li {
+  padding: 27px 28px;
+  border: 1px solid #eee;
+  border-radius: 0 0 14px 0;
+}
+
+.info b {
   text-align: left;
+  display: block;
+  font-size: 18px;
+  padding: 0 0 15px;
 }
 
-.num-btn{
-  display: flex;
-  margin: 60px 0 0;
-  justify-content: center;
-align-items: center;
-}
-
-.back{
-  cursor: pointer;
-  justify-content: center;
-  width: 35px;
-  height: 35px;
-  align-items: center;
-  display: flex;
-  margin: 0 9px;
-  border: 1px solid #d9d9d9;
-  font-weight: bold;
-  color: #444;
-  background: url(/독도전시관/back.png) no-repeat 50% 13px / 9.1px;
-  opacity: 0.8;
-}
-
-.back a{
-  margin: 0 3px;
-
-}
-
-.next{
-  cursor: pointer;
-  justify-content: center;
-  width: 35px;
-  height: 35px;
-  align-items: center;
-  display: flex;
-  margin: 0 9px;
-  border: 1px solid #d9d9d9;
-  font-weight: bold;
-  color: #444;
-  background: url(/독도전시관/next.png) no-repeat 50% 13px / 9.1px;
-  opacity: 0.8;   
-}
-
-.num-btn ol {
+.info p {
+  text-align: left;
+  font-size: 13px;
+  display: block;
   margin: 0;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
-.num-btn ol a{
-  font-size: 16px;
-  color: #939393;
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  width: 35px;
-  height: 35px;
+.map-pic {
+  width: 100%;
+  height: 760px;
+  background: url(/독도전시관/독도지형과지명.png) no-repeat;
+  background-size: cover;
+  margin: 60px 0 25px;
 }
 
-.num-btn ol a:nth-child(1){
-  color: #222;
-  font-weight: bold;
+.footer-content{
+  color: #737373;
+  font-size: 17px;
+  text-align: center;
 }
 
 .bottom-pic{
