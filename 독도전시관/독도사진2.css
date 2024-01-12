@@ -141,6 +141,7 @@ nav {
     opacity: 0.8;
   }
 
+
   .photos div{
     display: flex;
   }
@@ -237,7 +238,7 @@ align-items: center;
   text-decoration: none;
 }
 
-.num-btn ol a:nth-child(1){
+.num-btn ol a:nth-child(2){
   color: #222;
   font-weight: bold;
 }
