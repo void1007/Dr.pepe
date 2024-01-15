@@ -11,8 +11,8 @@ nav {
   background-color: transparent;
 }
 
-.carousel-item {
-  border-radius: 0 0 56px;
+.carousel-item  img{
+  border-radius: 0 0 240px 0;
 }
 
 .middle-p {
@@ -45,7 +45,9 @@ nav {
   height: 120px;
   border-radius: 50%;
 }
+
 .header-btn {
+  z-index: 3;
   border-radius: 50%;
   display: flex;
   background-color: #09847f;
@@ -56,6 +58,8 @@ nav {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  bottom: -80px;
+  right: 200px;
 }
 
 .header-btn p {
@@ -69,9 +73,22 @@ nav {
   justify-content: center;
 }
 
+.middle-a:hover{
+  background-color: #09847f;
+}
+
 .main {
   width: 700px;
   height: 445.45px;
+}
+
+.guide-info:hover{
+  background-color: #403e4b;
+}
+
+.go-page:hover{
+  color: #fff;
+  background-color: #09847f;
 }
 
 .content {
@@ -287,6 +304,14 @@ nav {
   padding: 70px 85px;
   border-radius: 72px 0 0 72px;
   border-right:1px solid #3aaca1 ;
+}
+
+.bottom-card a{
+  text-decoration: none;
+}
+
+.bottom-card2 a{
+  text-decoration: none;
 }
 
 .bottom-card h3{

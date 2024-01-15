@@ -65,10 +65,23 @@ nav {
 }
 
 .menu a {
+  position: relative;
   color: #fff;
   text-decoration: none;
   padding: 3px 35px 0px;
 }
+
+.now-page::before{
+      display: inline-block;
+    width: 5px;
+    height: 5px;
+    content: '';
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 0;
+  }
 
 .wrapper {
   padding: 180px 0 160px;
