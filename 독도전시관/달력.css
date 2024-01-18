@@ -98,15 +98,17 @@ width: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  margin-bottom: 20px;
 }
 
 .month div{
   margin-right: auto;
-  display: inline-block;
+  display: flex;
   border: 1px solid #f4f4f4;
 }
 
 .month p{
+  margin: 0;
 height: 48px;
 line-height: 48px;
 padding: 0 20px 0 48px;
@@ -118,12 +120,18 @@ font-size: 20px;
 }
 
 .btn-next{
+  opacity: 0.5;
   position: relative;
   height: 48px;
+  line-height: 48px;
   box-sizing: border-box;
   padding: 0 20px;
   font-size: 0;
   transition: all 0.3s ease 0s;
+}
+
+.btn-next:hover{
+  opacity: 1;
 }
 
 .btn-next::before{
@@ -136,4 +144,187 @@ font-size: 20px;
   background: url(/독도전시관/next2.png) no-repeat 50% 0;
   background-size: 100%;
   transform: translate(-50%,-50%);
+}
+
+.search-btn{
+  padding: 0 22px;
+  font-size: 15px;
+  height: 50px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  border: 3px solid #09847f;
+  color: #09847f;
+  font-weight: 400;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  border-radius: 35px;
+  width: fit-content;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+.search-btn::before{
+  display: block;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 0px;
+  width: 100%;
+  z-index: -1;
+  content: '';
+  color: #000 !important;
+  background: #09847f;
+  transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+
+.search-btn img{
+  width: 12px;
+  margin-left: 18px;
+  fill: #fff;
+}
+
+.today-btn{
+  font-weight: 400;
+  background: #505c78;
+  border: 1px solid #505c78;
+  border-radius: 35px;
+  position: inherit;
+  padding: 0 20px;
+  margin-left: 5px;
+  display: inline-block;
+  top: 0px;
+  right: 0px;
+  min-width: 100px;
+  height: 50px;
+  line-height: 48px;
+  box-sizing: border-box;
+  font-size: 15px;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.calender{
+  width: 100%;
+  display: flex;
+}
+
+th{
+  background: #ebedf1;
+  border: 1px solid #ebedf1;
+  border-bottom: 1px solid #34475b;
+  padding: 10px;
+  border-top: 3px solid #000;
+}
+
+table{
+  width: 40%;
+  table-layout: fixed;
+  border-spacing:0 ;
+  border-collapse:collapse ;
+  margin: 0;
+  padding: 0;
+  display: table;
+}
+
+tr{
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+
+td{
+  height: 70px;
+  border: 1px solid #e0e6e9;
+  line-height: 0em;
+  text-align: center;
+}
+
+.sunday{
+  font-weight: bold;
+  color: #c10000;
+}
+
+em{
+  display: block;
+  position: absolute;
+  top: 20px;
+  left: 0px;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-style: normal;
+}
+
+td a{
+  display: block;
+  position: relative;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 28px 10px 5px;
+  transition: all 0.4s ease-out 0s;
+  opacity: 0.2;
+}
+
+.choice{
+  border-spacing: 0;
+  border-collapse: collapse;
+  width: 60%;
+  background-color: #fff;
+  border: 1px solid #e0e6e9;
+  padding: 30px;
+}
+
+.choice p{
+  text-align: left;
+  padding: 0 0 20px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.mob_info{
+  display: none;
+}
+
+caption{
+  overflow: hidden;
+  line-height: 0;
+  text-indent: -2000em;
+  display: table-caption;
+  text-align: center;
+}
+
+colgroup{
+  display: table-column-group;
+}
+
+thead{
+  display: table-header-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+.tac{
+  text-align: center !important;
+}
+
+col{
+  display: table-column;
+}
+
+.choice tr{
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+.choice tr:last-child th{
+  border-bottom: 1px solid #868686;
+  font-size: 15px;
+}
+
+thead th{
+  background: #ebedf1;
+  color: #34475b;
 }
