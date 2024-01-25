@@ -11,16 +11,23 @@ nav {
   background-color: transparent;
 }
 
-.carousel-item  img{
-  border-radius: 0 0 240px 0;
-}
 
 .middle-p {
   padding: 50px 0 90px;
   margin: 0;
   font-size: 18px;
 }
+.article{
+  padding: 110px 0;
+  clear: both;
+  display: block;
+}
 
+.article-wrap{
+  display: flex;
+  width: 1400px;
+  margin: 0 auto;
+}
 .middle-a {
   color: white;
   text-decoration: none;
@@ -44,6 +51,31 @@ nav {
   width: 120px;
   height: 120px;
   border-radius: 50%;
+}
+
+.notice-inn{
+  position: relative;
+  box-sizing: border-box;
+  min-height: 400px;
+  margin: 0;
+  padding: 0;
+  justify-content: right;
+}
+.left-sect{
+  width: 100%;
+}
+.card-body{
+  width: 35%;
+  position: relative;
+  box-sizing: border-box;
+  padding-right: 30px;
+}
+
+.left-sect h5{
+  font-size: 44px;
+  padding: 70px 0 35px;
+  color: #000;
+  line-height: 1;
 }
 
 .header-btn {
