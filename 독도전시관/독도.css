@@ -53,6 +53,11 @@ nav {
   border-radius: 50%;
 }
 
+.c-item{
+  height: 100%;
+  border-radius: 0 0 160px 0;
+}
+
 .notice-inn{
   position: relative;
   box-sizing: border-box;

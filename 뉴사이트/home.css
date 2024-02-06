@@ -104,7 +104,7 @@ html {
 .wrapper {
   padding-top: 120px;
   display: block;
-  background-image: url(/image/equalizer-153212_1280.webp);
+  background-image: url(equalizer-153212_1280.webp);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -155,7 +155,7 @@ html {
 
 .wrapper2 {
   display: block;
-  background-image: url(/image/배경화면2.jpg);
+  background-image: url(배경화면2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 40px;
@@ -359,6 +359,7 @@ html {
   justify-content: center;
   align-items: center;
   border: 2px solid #ffef00;
+  padding-bottom: 8px;
 }
 
 .next-page a:first-child {
@@ -368,4 +369,5 @@ html {
   justify-content: center;
   align-items: center;
   border: 2px solid #ffef00;
+  padding-bottom: 8px;
 }

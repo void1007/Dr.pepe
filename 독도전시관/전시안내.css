@@ -9,7 +9,7 @@ nav {
 }
 
 .section{
-  background-image: url(/독도전시관/전시안내2.jpg);
+  background-image: url(전시안내2.jpg);
   background-repeat:no-repeat ;
   background-size: cover;
   background-position: center;
@@ -49,7 +49,7 @@ nav {
 }
 
 .section2{
-  background-image: url(/독도전시관/전시안내1.jpg);
+  background-image: url(전시안내1.jpg);
   background-repeat:no-repeat ;
   background-size: cover;
   background-position: center;
@@ -83,7 +83,7 @@ nav {
 }
 
 .section3{
-  background-image: url(/독도전시관/전시안내3.jpg);
+  background-image: url(전시안내3.jpg);
   background-repeat:no-repeat ;
   background-size: cover;
   background-position: center;
@@ -115,7 +115,7 @@ nav {
 }
 
 .section4{
-  background-image: url(/독도전시관/전시안내4.jpg);
+  background-image: url(전시안내4.jpg);
   background-repeat:no-repeat ;
   background-size: cover;
   background-position: center;
